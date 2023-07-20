@@ -1,3 +1,57 @@
 //=================================================//
 //=================variable scss=====================//
 //=================================================//
+
+//== variable color
+$dark: #25282b;
+$primary: #336cfb;
+$secondary: #6c757d;
+$success: #16d090;
+$danger: #ff6760;
+$warning: #fac032;
+$info: #0dcaf0;
+$light: #f8f9fa;
+$gray-100: #f6f8fb;
+$gray-200: #e8e8e8;
+$gray-300: #dbdde0;
+$gray-400: #cacccf;
+$gray-500: #a0a4a8;
+$gray-900: #52575c;
+$blue-100: #ebf0ff;
+$blue-200: #a9c1fd;
+$primary-hover: #558eff;
+$blue-900: #1f58e7;
+$white: #ffff;
+$warning-400: #fcdf98;
+$warning-900: #efad0a;
+$success-400: #34eeae;
+$success-900: #03b575;
+$danger-400: #e74f48;
+$danger-900: #ff7e77;
+
+//== font weight
+$font-weight-400: 400;
+$font-weight-700: 700;
+$font-weight-900: 900;
+
+//== font size
+$fs-15: 0.938rem;
+$fs-12: 0.75rem;
+$extra-small: 0.625rem;
+
+//==letter spacing
+$letter-spacing-sm: 0.006rem;
+$letter-spacing-md: 0.013rem;
+$letter-spacing-lg: 0.025rem;
+$letter-spacing-xl: 1rem;
+
+//==line height
+$lh-60: 3.75rem;
+$lh-46: 2.875rem;
+$lh-34: 2.125rem;
+$lh-26: 1.625rem;
+$lh-24: 1.5rem;
+$lh-20: 1.25rem;
+$lh-18: 1.125rem;
+$lh-16: 1rem;
+$lh-12: 0.75rem;
