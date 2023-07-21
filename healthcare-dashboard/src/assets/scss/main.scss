@@ -23,7 +23,7 @@ $h2-font-size: 2.5rem;
 $h3-font-size: 1.75rem;
 $h4-font-size: 1.625rem;
 $h5-font-size: 1.25rem;
-$h6-font-size: 1.25rem;
+$h6-font-size: 1.125rem;
 
 $body-font-size: 0.875rem;
 $body-line-height: 1.25rem;
@@ -39,6 +39,9 @@ $btn-focus-box-shadow: none;
 $navbar-toggler-focus-width: 0;
 $btn-focus-box-shadow: none;
 $box-shadow-sm: 4px 0px 16px 0px rgba(16, 30, 115, 0.08);
+
+$h5-font-weight: $font-weight-700;
+$h5-line-height: $lh-26;
 h1,
 .h1 {
   font-size: $h1-font-size;
@@ -74,9 +77,9 @@ h4,
 h5,
 .h5 {
   font-size: $h5-font-size;
-  font-weight: $font-weight-700;
-  line-height: $lh-26;
-  letter-spacing: $letter-spacing-md;
+  font-weight: $h5-font-weight !important;
+  line-height: $h5-line-height !important;
+  letter-spacing: $letter-spacing-md !important;
 }
 
 h6,

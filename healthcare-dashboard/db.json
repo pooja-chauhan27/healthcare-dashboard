@@ -50,5 +50,118 @@
         "name": "harry",
         "email": "harry@email.com"
     }
+],
+"appointments": [
+    {
+        "id": 1,
+        "image": "user-img1.png",
+        "name": "Leslie Alexander",
+        "email": "lesie.alexander@example.com",
+        "date": "04/10/20200",
+        "visitTime": "10:15-09:45am",
+        "doctor": "Dr. Jacob Jones",
+        "conditions": "Depression"
+      },
+      {
+        "id": 2,
+        "image": "user-img2.png",
+        "name": "Ronald Richards",
+        "email": "ronald.richards@example.com",
+        "date": "02/10/2020",
+        "visitTime": "05:15-09:45am",
+        "doctor": "Dr. Theresa Webb",
+        "conditions": "Mumps Stage II"
+      },
+      {
+        "id": 3,
+        "image": "user-img3.png",
+        "name": "Jane Cooper",
+        "email": "jane.cooper@example.com",
+        "date": "17/12/2020",
+        "visitTime": "09:15-09:45am",
+        "doctor": "Dr. Jacob Jones",
+        "conditions": "Depression"
+      },
+      {
+        "id": 4,
+        "image": "user-img4.png",
+        "name": "Robert Fox",
+        "email": "robert.fox@gmail.com",
+        "date": "18/10/2020",
+        "visitTime": "04:15-09:45am",
+        "doctor": "Dr. Arlene McCoy",
+        "conditions": "Arthritis"
+      },
+      {
+        "id": 5,
+        "image": "user-img4.png",
+        "name": "Jenny Wilson",
+        "email": "jenny.wilson@example.com",
+        "date": "20/10/2020",
+        "visitTime": "06:15-09:45am",
+        "doctor": "Dr. Esther Howard",
+        "conditions": "Fracture"
+      },
+      {
+        "id": 6,
+        "image": "user-img3.png",
+        "name": "Jane Cooper",
+        "email": "jane.cooper@example.com",
+        "date": "17/12/2020",
+        "visitTime": "09:15-09:45am",
+        "doctor": "Dr. Jacob Jones",
+        "conditions": "Depression"
+      },
+      {
+        "id": 7,
+        "image": "user-img2.png",
+        "name": "Ronald Richards",
+        "email": "ronald.richards@example.com",
+        "date": "02/10/2020",
+        "visitTime": "05:15-09:45am",
+        "doctor": "Dr. Theresa Webb",
+        "conditions": "Mumps Stage II"
+      },
+      {
+        "id": 8,
+        "image": "user-img1.png",
+        "name": "Leslie Alexander",
+        "email": "lesie.alexander@example.com",
+        "date": "04/10/20200",
+        "visitTime": "10:15-09:45am",
+        "doctor": "Dr. Jacob Jones",
+        "conditions": "Depression"
+      },
+      {
+        "id": 9,
+        "image": "user-img1.png",
+        "name": "Leslie Alexander",
+        "email": "lesie.alexander@example.com",
+        "date": "04/10/20200",
+        "visitTime": "10:15-09:45am",
+        "doctor": "Dr. Jacob Jones",
+        "conditions": "Depression"
+      },
+      {
+        "id": 10,
+        "image": "user-img1.png",
+        "name": "Leslie Alexander",
+        "email": "lesie.alexander@example.com",
+        "date": "04/10/20200",
+        "visitTime": "10:15-09:45am",
+        "doctor": "Dr. Jacob Jones",
+        "conditions": "Depression"
+      },
+      {
+        "id": 11,
+        "image": "user-img1.png",
+        "name": "Leslie Alexander",
+        "email": "lesie.alexander@example.com",
+        "date": "04/10/20200",
+        "visitTime": "10:15-09:45am",
+        "doctor": "Dr. Jacob Jones",
+        "conditions": "Depression"
+      }
+
 ]
 }

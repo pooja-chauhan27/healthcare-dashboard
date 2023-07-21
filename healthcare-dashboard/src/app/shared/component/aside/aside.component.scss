@@ -33,7 +33,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .aside:not(.open-aside) {
     width: 68px;
     padding-inline: 20px;
@@ -48,6 +48,9 @@
         display: none !important;
       }
       .aside-item {
+        a {
+          justify-content: center !important;
+        }
         .aside-link {
           display: none !important;
         }
