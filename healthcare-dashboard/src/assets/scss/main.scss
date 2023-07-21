@@ -17,7 +17,7 @@ $theme-color: (
 );
 
 // font size
-$font-size-base: 1rem;
+$font-size-base: 0.875rem;
 $h1-font-size: 3.5rem;
 $h2-font-size: 2.5rem;
 $h3-font-size: 1.75rem;
@@ -28,57 +28,69 @@ $h6-font-size: 1.25rem;
 $body-font-size: 0.875rem;
 $body-line-height: 1.25rem;
 $body-font-weight: $font-weight-400;
-$body-color: $dark;
+$body-color: $secondary;
 $small-font-size: 0.813rem;
 $lead-font-size: 1rem;
 
-h1,.h1{
-  font-size:$h1-font-size;
+//== button
+$btn-focus-box-shadow: none;
+$btn-active-box-shadow: none;
+$btn-focus-box-shadow: none;
+$navbar-toggler-focus-width: 0;
+$btn-focus-box-shadow: none;
+$box-shadow-sm: 4px 0px 16px 0px rgba(16, 30, 115, 0.08);
+h1,
+.h1 {
+  font-size: $h1-font-size;
   font-weight: $font-weight-700;
   line-height: $lh-60;
   letter-spacing: $letter-spacing-lg;
 }
 
-h2,.h2{
-  font-size:$h2-font-size;
+h2,
+.h2 {
+  font-size: $h2-font-size;
   font-weight: $font-weight-700;
   line-height: $lh-46;
   letter-spacing: $letter-spacing-md;
 }
 
-h3,.h3{
-  font-size:$h3-font-size;
+h3,
+.h3 {
+  font-size: $h3-font-size;
   font-weight: $font-weight-400;
   line-height: $lh-34;
   letter-spacing: $letter-spacing-md;
 }
 
-h4,.h4{
-  font-size:$h4-font-size;
+h4,
+.h4 {
+  font-size: $h4-font-size;
   font-weight: $font-weight-700;
   line-height: $lh-34;
   letter-spacing: $letter-spacing-md;
 }
 
-h5,.h5{
-  font-size:$h5-font-size;
+h5,
+.h5 {
+  font-size: $h5-font-size;
   font-weight: $font-weight-700;
   line-height: $lh-26;
   letter-spacing: $letter-spacing-md;
 }
 
-h6,.h6{
-  font-size:$h6-font-size;
+h6,
+.h6 {
+  font-size: $h6-font-size;
   font-weight: $font-weight-400;
   line-height: $lh-24;
   letter-spacing: $letter-spacing-sm;
 }
 
-
 .small-regular-font {
-  font-size: $small-font-size;
-  font-weight: $font-weight-400;
-  line-height: $lh-16;
+  font-size: $small-font-size !important;
+  font-weight: $font-weight-400 !important;
+  line-height: $lh-16 !important;
 }
 
 .small-bold-font {
@@ -135,9 +147,9 @@ h6,.h6{
   line-height: $lh-20;
   letter-spacing: $letter-spacing-sm;
 }
-// font size
 
+// font size
+@import "./header";
 @import "./global";
 @import "./aside";
-@import "./header";
 @import "./footer";

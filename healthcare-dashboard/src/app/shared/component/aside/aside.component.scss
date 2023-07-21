@@ -1,0 +1,79 @@
+//=================================================//
+//=================aside scss=====================//
+//=================================================//
+.aside {
+  transition: 0.35s ease-in;
+  width: 250px;
+  padding-inline: 24px;
+
+  .aside-wrapper {
+    .health-logo {
+      display: block;
+    }
+    .logo-icon {
+      display: none;
+    }
+    .subtitle-medicine {
+      display: block;
+    }
+    .aside-item {
+      overflow-y: auto;
+      overflow-x: hidden;
+      .aside-link {
+        padding-left: 12px;
+        display: inline;
+      }
+    }
+  }
+
+  li {
+    .aside-item {
+      padding: 14px 0px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .aside:not(.open-aside) {
+    width: 68px;
+    padding-inline: 20px;
+    .aside-wrapper {
+      .health-logo {
+        display: none;
+      }
+      .logo-icon {
+        display: block;
+      }
+      .subtitle-medicine {
+        display: none !important;
+      }
+      .aside-item {
+        .aside-link {
+          display: none !important;
+        }
+      }
+    }
+  }
+  .aside.open-aside {
+    width: 250px !important;
+    padding-inline: 24px;
+
+    .aside-wrapper {
+      .health-logo {
+        display: block !important;
+      }
+      .logo-icon {
+        display: none !important;
+      }
+      .subtitle-medicine {
+        display: block !important;
+      }
+      .aside-item {
+        .aside-link {
+          padding-left: 12px;
+          display: inline;
+        }
+      }
+    }
+  }
+}

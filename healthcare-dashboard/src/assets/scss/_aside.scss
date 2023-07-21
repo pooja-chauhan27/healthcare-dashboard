@@ -1,3 +1,24 @@
 //=================================================//
 //=================aside scss=====================//
 //=================================================//
+.aside {
+  .aside-item {
+    &:hover {
+      svg {
+        cursor: pointer;
+      }
+      svg path {
+        fill: $primary-hover;
+      }
+      a {
+        color: $primary-hover !important;
+      }
+    }
+    a.active {
+      svg path {
+        fill: $primary-hover;
+      }
+      color: $primary !important;
+    }
+  }
+}

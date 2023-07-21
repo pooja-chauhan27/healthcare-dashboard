@@ -9,3 +9,23 @@
   border: 2px solid rgb(196, 196, 196);
   padding: 20px;
 }
+.form-control:focus {
+  border-color: $gray-300 !important;
+  outline: 0;
+  box-shadow: none !important;
+}
+
+//== scrollbar
+::-webkit-scrollbar {
+  background-color: $light;
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $secondary;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $secondary;
+}
