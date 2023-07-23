@@ -130,6 +130,12 @@
                       class="subtitle-md text-dark py-18 ps-4 bg-body-tertiary"
                       scope="col"
                     >
+                      Id
+                    </th>
+                    <th
+                      class="subtitle-md text-dark py-18 ps-4 bg-body-tertiary"
+                      scope="col"
+                    >
                       Name
                     </th>
                     <th
@@ -171,12 +177,17 @@
                 <tbody>
                   <tr *ngFor="let item of appointments; index as i">
                     <td class="ps-4 text-dark">
-                      <img
+                      {{ item.id }}
+                    </td>
+                    <td class="ps-4 text-dark">
+                      <div>
+                        <img
                         [src]="'/assets/images/png/' + item.image"
                         class="me-2"
                         style="width: 32px"
                       />
                       {{ item.name }}
+                      </div>
                     </td>
                     <td class="text-dark">{{ item.email }}</td>
                     <td class="text-dark">{{ item.date }}</td>
@@ -184,7 +195,7 @@
                     <td class="text-dark">{{ item.doctor }}</td>
                     <td class="text-dark">{{ item.conditions }}</td>
                     <td>
-                      <span class="pe-2 action-icon"
+                      <span class="pe-2 action-icon"  routerLink="/edit/{{item.id}}"
                         ><svg
                           width="16"
                           height="16"
@@ -197,7 +208,7 @@
                             fill="#A0A4A8"
                           /></svg
                       ></span>
-                      <span class="action-icon"
+                      <span class="action-icon" (click)="delete(item.id,i)"
                         ><svg
                           width="12"
                           height="14"

@@ -9,7 +9,7 @@ const routes: Routes = [
       import('./pages/user/user.module').then((module) => module.UserModule),
   },
   {
-    path: 'user',
+    path: '',
     loadChildren: () =>
       import('./pages/user/user.module').then((module) => module.UserModule),
   },

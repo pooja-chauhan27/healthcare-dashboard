@@ -1,6 +1,6 @@
-//=================================================//
-//=================main scss=====================//
-//=================================================//
+// //=================================================//
+// //=================main scss=====================//
+// //=================================================//
 
 @import "./variables";
 
@@ -16,7 +16,7 @@ $theme-color: (
   "light": $light,
 );
 
-// font size
+// // font size
 $font-size-base: 0.875rem;
 $h1-font-size: 3.5rem;
 $h2-font-size: 2.5rem;
@@ -25,134 +25,134 @@ $h4-font-size: 1.625rem;
 $h5-font-size: 1.25rem;
 $h6-font-size: 1.125rem;
 
-$body-font-size: 0.875rem;
-$body-line-height: 1.25rem;
-$body-font-weight: $font-weight-400;
-$body-color: $secondary;
-$small-font-size: 0.813rem;
-$lead-font-size: 1rem;
+// $body-font-size: 0.875rem;
+// $body-line-height: 1.25rem;
+// $body-font-weight: $font-weight-400;
+// // $body-color: $secondary;
+// $small-font-size: 0.813rem;
+// $lead-font-size: 1rem;
 
-//== button
-$btn-focus-box-shadow: none;
-$btn-active-box-shadow: none;
-$btn-focus-box-shadow: none;
-$navbar-toggler-focus-width: 0;
-$btn-focus-box-shadow: none;
-$box-shadow-sm: 4px 0px 16px 0px rgba(16, 30, 115, 0.08);
+// //== button
+// $btn-focus-box-shadow: none;
+// $btn-active-box-shadow: none;
+// $btn-focus-box-shadow: none;
+// $navbar-toggler-focus-width: 0;
+// $btn-focus-box-shadow: none;
+// $box-shadow-sm: 4px 0px 16px 0px rgba(16, 30, 115, 0.08);
 
-$h5-font-weight: $font-weight-700;
-$h5-line-height: $lh-26;
-h1,
-.h1 {
-  font-size: $h1-font-size;
-  font-weight: $font-weight-700;
-  line-height: $lh-60;
-  letter-spacing: $letter-spacing-lg;
-}
+// $h5-font-weight: $font-weight-700;
+// $h5-line-height: $lh-26;
+// h1,
+// .h1 {
+//   font-size: $h1-font-size;
+//   font-weight: $font-weight-700;
+//   line-height: $lh-60;
+//   letter-spacing: $letter-spacing-lg;
+// }
 
-h2,
-.h2 {
-  font-size: $h2-font-size;
-  font-weight: $font-weight-700;
-  line-height: $lh-46;
-  letter-spacing: $letter-spacing-md;
-}
+// h2,
+// .h2 {
+//   font-size: $h2-font-size;
+//   font-weight: $font-weight-700;
+//   line-height: $lh-46;
+//   letter-spacing: $letter-spacing-md;
+// }
 
-h3,
-.h3 {
-  font-size: $h3-font-size;
-  font-weight: $font-weight-400;
-  line-height: $lh-34;
-  letter-spacing: $letter-spacing-md;
-}
+// h3,
+// .h3 {
+//   font-size: $h3-font-size;
+//   font-weight: $font-weight-400;
+//   line-height: $lh-34;
+//   letter-spacing: $letter-spacing-md;
+// }
 
-h4,
-.h4 {
-  font-size: $h4-font-size;
-  font-weight: $font-weight-700;
-  line-height: $lh-34;
-  letter-spacing: $letter-spacing-md;
-}
+// h4,
+// .h4 {
+//   font-size: $h4-font-size;
+//   font-weight: $font-weight-700;
+//   line-height: $lh-34;
+//   letter-spacing: $letter-spacing-md;
+// }
 
-h5,
-.h5 {
-  font-size: $h5-font-size;
-  font-weight: $h5-font-weight !important;
-  line-height: $h5-line-height !important;
-  letter-spacing: $letter-spacing-md !important;
-}
+// h5,
+// .h5 {
+//   font-size: $h5-font-size;
+//   font-weight: $h5-font-weight !important;
+//   line-height: $h5-line-height !important;
+//   letter-spacing: $letter-spacing-md !important;
+// }
 
-h6,
-.h6 {
-  font-size: $h6-font-size;
-  font-weight: $font-weight-400;
-  line-height: $lh-24;
-  letter-spacing: $letter-spacing-sm;
-}
+// h6,
+// .h6 {
+//   font-size: $h6-font-size;
+//   font-weight: $font-weight-400;
+//   line-height: $lh-24;
+//   letter-spacing: $letter-spacing-sm;
+// }
 
-.small-regular-font {
-  font-size: $small-font-size !important;
-  font-weight: $font-weight-400 !important;
-  line-height: $lh-16 !important;
-}
+// .small-regular-font {
+//   font-size: $small-font-size !important;
+//   font-weight: $font-weight-400 !important;
+//   line-height: $lh-16 !important;
+// }
 
-.small-bold-font {
-  font-size: $fs-12;
-  font-weight: $font-weight-700;
-  line-height: $lh-16;
-}
+// .small-bold-font {
+//   font-size: $fs-12;
+//   font-weight: $font-weight-700;
+//   line-height: $lh-16;
+// }
 
-.small-bold-xs {
-  font-size: $extra-small;
-  font-weight: $font-weight-700;
-  line-height: $lh-12;
-  letter-spacing: $letter-spacing-md;
-}
+// .small-bold-xs {
+//   font-size: $extra-small;
+//   font-weight: $font-weight-700;
+//   line-height: $lh-12;
+//   letter-spacing: $letter-spacing-md;
+// }
 
-.btn {
-  font-size: $fs-15;
-  font-weight: $font-weight-700;
-  line-height: $lh-18;
-  letter-spacing: $letter-spacing-md;
-}
+// // .btn {
+// //   font-size: $fs-15;
+// //   font-weight: $font-weight-700;
+// //   line-height: $lh-18;
+// //   letter-spacing: $letter-spacing-md;
+// // }
 
-.subtitle-lg {
-  font-size: $body-font-size;
-  font-weight: $font-weight-700;
-  line-height: $lh-12;
-  letter-spacing: $letter-spacing-sm;
-}
+// .subtitle-lg {
+//   font-size: $body-font-size;
+//   font-weight: $font-weight-700;
+//   line-height: $lh-12;
+//   letter-spacing: $letter-spacing-sm;
+// }
 
-.subtitle-md {
-  font-size: $body-font-size;
-  font-weight: $font-weight-700;
-  line-height: $lh-20;
-  letter-spacing: $letter-spacing-sm;
-}
+// .subtitle-md {
+//   font-size: $body-font-size;
+//   font-weight: $font-weight-700;
+//   line-height: $lh-20;
+//   letter-spacing: $letter-spacing-sm;
+// }
 
-.initial {
-  font-size: $small-font-size;
-  font-weight: $font-weight-900;
-  line-height: $lh-16;
-  letter-spacing: $letter-spacing-sm;
-}
+// .initial {
+//   font-size: $small-font-size;
+//   font-weight: $font-weight-900;
+//   line-height: $lh-16;
+//   letter-spacing: $letter-spacing-sm;
+// }
 
-.body-bold-font {
-  font-size: $lead-font-size;
-  font-weight: $font-weight-700;
-  line-height: $lh-24;
-  letter-spacing: $letter-spacing-sm;
-}
+// .body-bold-font {
+//   font-size: $lead-font-size;
+//   font-weight: $font-weight-700;
+//   line-height: $lh-24;
+//   letter-spacing: $letter-spacing-sm;
+// }
 
-.body-regular-font {
-  font-size: $body-font-size;
-  font-weight: $font-weight-400;
-  line-height: $lh-20;
-  letter-spacing: $letter-spacing-sm;
-}
+// .body-regular-font {
+//   font-size: $body-font-size;
+//   font-weight: $font-weight-400;
+//   line-height: $lh-20;
+//   letter-spacing: $letter-spacing-sm;
+// }
 
-// font size
-@import "./header";
-@import "./global";
-@import "./aside";
-@import "./footer";
+// // font size
+// @import "./header";
+// @import "./global";
+// @import "./aside";
+// @import "./footer";
