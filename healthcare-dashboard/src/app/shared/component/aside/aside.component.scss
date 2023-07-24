@@ -4,11 +4,11 @@
 .aside {
   transition: 0.35s ease-in;
   width: 250px;
-  padding-inline: 24px;
 
   .aside-wrapper {
     .health-logo {
       display: block;
+      padding-inline: 24px;
     }
     .logo-icon {
       display: none;
@@ -36,10 +36,10 @@
 @media screen and (max-width: 992px) {
   .aside:not(.open-aside) {
     width: 68px;
-    padding-inline: 20px;
     .aside-wrapper {
       .health-logo {
         display: none;
+        padding-inline: 24px;
       }
       .logo-icon {
         display: block;
@@ -48,9 +48,6 @@
         display: none !important;
       }
       .aside-item {
-        a {
-          justify-content: center !important;
-        }
         .aside-link {
           display: none !important;
         }
@@ -59,11 +56,11 @@
   }
   .aside.open-aside {
     width: 250px !important;
-    padding-inline: 24px;
 
     .aside-wrapper {
       .health-logo {
         display: block !important;
+        padding-inline: 24px;
       }
       .logo-icon {
         display: none !important;

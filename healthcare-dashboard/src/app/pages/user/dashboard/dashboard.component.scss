@@ -1,8 +1,20 @@
-.action-icon:hover {
-  svg {
-    cursor: pointer;
+//=================================================//
+//=================dashboard scss=====================//
+//=================================================//
+table {
+  th.subtitle-md {
+    white-space: nowrap;
   }
-  svg path {
-    fill: #558eff;
+  // td,
+  // th {
+  //   padding-inline: 12px !important;
+  // }
+  .action-icon:hover {
+    svg {
+      cursor: pointer;
+    }
+    svg path {
+      fill: #558eff;
+    }
   }
 }

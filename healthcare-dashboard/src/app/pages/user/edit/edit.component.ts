@@ -29,7 +29,6 @@ export class EditComponent {
   ngOnInit() {
     let id = this.route.snapshot.params['id'];
     this.commonService.getUserId(id).subscribe((result) => {
-      // console.log(result);
       this.user = result;
       this.editFormGroup = new FormGroup({
         image: new FormControl(this.user.image),
@@ -42,6 +41,7 @@ export class EditComponent {
       });
     });
   }
+  // update function
   update() {
     this.commonService
       .updateAppointment(
@@ -51,7 +51,16 @@ export class EditComponent {
       .subscribe((result) => {
         console.log(result);
       });
+
     setTimeout(() => {
+      alert('You have successfully updated!');
+      this.router.navigate(['', '/']);
+    }, 1000);
+  }
+  // cancel function
+  cancel(){
+    setTimeout(() => {
+      alert('You have canceled!');
       this.router.navigate(['', '/']);
     }, 1000);
   }

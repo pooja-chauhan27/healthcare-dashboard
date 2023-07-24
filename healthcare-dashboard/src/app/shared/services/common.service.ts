@@ -6,12 +6,13 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root',
 })
 export class CommonService {
-  constructor(private http: HttpClient) {}
-
   // url for users and appointments
   public userUrl = 'http://localhost:3000/user';
   public appointmentUrl = 'http://localhost:3000/appointments';
+  public isCollapsed = true;
 
+  constructor(private http: HttpClient) {}
+  
   // get request for appointments
   getAppointment(): Observable<any> {
     return this.http.get<any>(this.appointmentUrl);
@@ -37,7 +38,6 @@ export class CommonService {
 
   //login
   login(data: any) {
-    console.log('login method fired');
     return this.http.get(
       `http://localhost:3000/appointments?name=${data}&email=${data}`,
       data

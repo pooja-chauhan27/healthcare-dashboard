@@ -1,39 +1,80 @@
 <section>
-    <div class="container-fluid">
-        <div class="card w-75 mx-auto">
-            <div class="card-header subtitle-lg text-dark">
-              Edit Form Data
-            </div>
-            <div class="card-body">
-                <form [formGroup]="editFormGroup">
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Name</label>
-                        <input type="text" class="form-control" formControlName="name" id="name">
-                      </div>
-                    <div class="mb-3">
-                      <label for="email" class="form-label">Email address</label>
-                      <input type="email" class="form-control" formControlName="email" id="email" aria-describedby="emailHelp">
-                    </div>
-                    <div class="mb-3">
-                      <label for="date" class="form-label">Date</label>
-                      <input type="text" class="form-control" formControlName="date" id="date">
-                    </div>
-                    <div class="mb-3">
-                      <label for="visitTime" class="form-label">Visit Time</label>
-                      <input type="text" class="form-control" formControlName="visitTime" id="visitTime">
-                    </div>
-                    <div class="mb-3">
-                      <label for="doctor" class="form-label">Doctor</label>
-                      <input type="text" class="form-control" formControlName="doctor" id="doctor">
-                    </div>
-                    <div class="mb-3">
-                      <label for="condition" class="form-label">Condition</label>
-                      <input type="text" class="form-control" formControlName="conditions" id="condition">
-                    </div>
-                    <button type="button" routerLink="/" class="btn btn-primary text-white me-3">Cancel</button>
-                    <button (click)="update()" type="button" class="btn btn-primary text-white">Udate</button>
-                  </form>
-            </div>
+  <div class="container-fluid">
+    <div class="card w-75 mx-auto">
+      <div class="card-header subtitle-lg text-dark p-4">Edit Form</div>
+      <div class="card-body">
+        <form [formGroup]="editFormGroup">
+          <div class="mb-3">
+            <label for="name" class="form-label subtitle-md text-dark">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              formControlName="name"
+              id="name"
+            />
           </div>
+          <div class="mb-3">
+            <label for="email" class="form-label subtitle-md text-dark">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              formControlName="email"
+              id="email"
+              aria-describedby="emailHelp"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="date" class="form-label subtitle-md text-dark">Date</label>
+            <input
+              type="text"
+              class="form-control"
+              formControlName="date"
+              id="date"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="visitTime" class="form-label subtitle-md text-dark">Visit Time</label>
+            <input
+              type="text"
+              class="form-control"
+              formControlName="visitTime"
+              id="visitTime"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="doctor" class="form-label subtitle-md text-dark">Doctor</label>
+            <input
+              type="text"
+              class="form-control"
+              formControlName="doctor"
+              id="doctor"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="condition" class="form-label subtitle-md text-dark">Condition</label>
+            <input
+              type="text"
+              class="form-control"
+              formControlName="conditions"
+              id="condition"
+            />
+          </div>
+          <button
+            type="button"
+            (click)="cancel()"
+            class="btn btn-danger text-white me-3"
+          >
+            Cancel
+          </button>
+          <button
+            (click)="update()"
+            type="button"
+            class="btn btn-primary text-white"
+          >
+            Update
+          </button>
+        </form>
+      </div>
     </div>
+  </div>
 </section>

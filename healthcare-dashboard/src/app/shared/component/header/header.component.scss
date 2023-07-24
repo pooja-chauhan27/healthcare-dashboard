@@ -1,8 +1,29 @@
-@media screen and (min-width: 992px) {
-  .form-control {
-    width: 300px;
+//=================================================//
+//=================header scss=====================//
+//=================================================//
+header {
+  .navbar {
+    left: 69px !important;
+    transition: left 0.35s ease-in;
   }
-}
-.search-bar .input-group {
-  height: 40px;
+  @media screen and (min-width: 992px) {
+    .navbar {
+      left: 250px !important;
+      transition: left 0.35s ease-in;
+    }
+    .form-control {
+      width: 300px;
+    }
+  }
+  .search-bar .input-group {
+    height: 40px;
+  }
+  .openAside {
+    margin-left: 145px;
+    transition: margin-left 0.35s ease-in;
+  }
+  .closeAside {
+    margin-left: 0px;
+    transition: margin-left 0.35s ease-in;
+  }
 }

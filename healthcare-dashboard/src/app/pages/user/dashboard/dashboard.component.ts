@@ -15,18 +15,17 @@ export class DashboardComponent {
     // get request
     this.commonService.getAppointment().subscribe((response: any[]) => {
       this.appointments = response;
-      // console.log(this.appointments);
     });
 
     //delete id
   }
 
   delete(id: any, i: any) {
-    console.log(id, i);
-    this.appointments.splice(i, 1);
-    // console.log(this.appointments);
-    this.commonService.deleteAppointment(id).subscribe((response) => {
-      console.log(response);
-    });
+    if (confirm('Are you sure you want to delete!') == true) {
+      this.appointments.splice(i, 1);
+      this.commonService.deleteAppointment(id).subscribe((response) => {
+        console.log(response);
+      });
+    }
   }
 }

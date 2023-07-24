@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CommonService } from '../../services/common.service';
 
 @Component({
   selector: 'app-aside',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./aside.component.scss'],
 })
 export class AsideComponent {
-  public isCollapsed = true;
+  isCollapsed: boolean = this.commonService.isCollapsed;
+  constructor(private commonService: CommonService) {}
+
+  ngDoCheck(): void {
+    this.isCollapsed = this.commonService.isCollapsed;
+  }
+
 }

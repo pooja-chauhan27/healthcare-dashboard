@@ -1,34 +1,33 @@
 <div
-  class="aside position-fixed top-0 bottom-0 bg-white shadow-sm z-2"
+  class="aside position-fixed top-0 bottom-0 bg-white shadow-sm z-2 overflow-hidden"
   [ngClass]="isCollapsed ? '' : 'open-aside'"
 >
   <div class="position-absolute"></div>
   <div class="aside-wrapper">
     <div class="py-4 mb-2">
       <!-- logo -->
-      <a routerLink="" (click)="isCollapsed = !isCollapsed">
+      <a routerLink="">
         <img
           src="/assets/images/png/logo-image.png"
-          class="img-fluid health-logo"
+          class="health-logo"
           alt="circle"
           height="30"
         />
         <img
           src="/assets/images/png/short.png"
-          class="img-fluid logo-icon"
+          class="img-fluid logo-icon mx-3"
           alt="circle"
-          height="30"
         />
       </a>
       <!-- /logo -->
     </div>
-    <div class="py-4 pb-1 subtitle-medicine">
+    <div class="p-4 pb-1 subtitle-medicine">
       <p class="body-regular-font text-uppercase">Medicine</p>
     </div>
     <ul class="aside-list list-unstyled h-100">
       <!-- li -->
       <li>
-        <div class="aside-item">
+        <div class="aside-item px-4">
           <a
             class="text-decoration-none text-secondary subtitle-md text-dark d-flex align-items-center"
             routerLink="dashboard"
@@ -55,7 +54,7 @@
       <!-- /li -->
       <!-- li -->
       <li>
-        <div class="aside-item">
+        <div class="aside-item px-4">
           <a
             class="text-decoration-none text-secondary subtitle-md text-dark d-flex align-items-center"
             routerLink="appointment"
@@ -89,7 +88,7 @@
       <!-- /li -->
       <!-- li -->
       <li>
-        <div class="aside-item">
+        <div class="aside-item px-4">
           <a
             class="text-decoration-none text-secondary subtitle-md text-dark d-flex align-items-center"
             routerLink="doctors"
@@ -116,7 +115,7 @@
       <!-- /li -->
       <!-- li -->
       <li>
-        <div class="aside-item">
+        <div class="aside-item px-4">
           <a
             class="text-decoration-none text-secondary subtitle-md text-dark d-flex align-items-center"
             routerLink="departments"
@@ -143,7 +142,7 @@
       <!-- /li -->
       <!-- li -->
       <li>
-        <div class="aside-item">
+        <div class="aside-item px-4">
           <a
             class="text-decoration-none text-secondary subtitle-md text-dark d-flex align-items-center"
             routerLink="patients"
@@ -170,7 +169,7 @@
       <!-- /li -->
       <!-- li -->
       <li>
-        <div class="aside-item">
+        <div class="aside-item px-4">
           <a
             class="text-decoration-none text-secondary subtitle-md text-dark d-flex align-items-center"
             routerLink="payments"
@@ -197,7 +196,7 @@
       <!-- /li -->
       <!-- li -->
       <li class="border-top">
-        <div class="aside-item">
+        <div class="aside-item px-4">
           <a
             class="text-decoration-none text-secondary subtitle-md text-dark d-flex align-items-center"
             routerLink="help"
