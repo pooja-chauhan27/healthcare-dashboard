@@ -22,9 +22,8 @@ export class LoginComponent {
     });
   }
   login() {
-    let formValue = this.loginFormGroup.value;
     this.commonService.login(this.loginFormGroup.value).subscribe((result) => {
-      console.log(result.success);
+      console.log(result);
     });
   }
 }
