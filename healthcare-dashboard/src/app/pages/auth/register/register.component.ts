@@ -11,12 +11,7 @@ import { Router } from '@angular/router';
 export class RegisterComponent {
   formObj: any;
   public show = false;
-  registerFormGroup = new FormGroup({
-    firstName: new FormControl('', [Validators.required]),
-    lastName: new FormControl('', [Validators.required]),
-    userEmail: new FormControl('', [Validators.required]),
-    userPassword: new FormControl('', [Validators.required]),
-  });
+  registerFormGroup!: FormGroup;
   constructor(private commonService: CommonService, private router: Router) {}
   ngOnInit() {
     this.registerFormGroup = new FormGroup({
@@ -24,12 +19,13 @@ export class RegisterComponent {
       lastName: new FormControl('', [Validators.required]),
       userEmail: new FormControl('', [Validators.required]),
       userPassword: new FormControl('', [Validators.required]),
+      phone: new FormControl('', [Validators.required]),
+      confirmPassword: new FormControl('', [Validators.required]),
     });
   }
 
   // registration form
   register() {
-    // console.log(this.registerFormGroup.value);
     let formValue = this.registerFormGroup.value;
     if (this.registerFormGroup.valid) {
       this.commonService.registerUser(formValue).subscribe((result) => {
@@ -37,8 +33,7 @@ export class RegisterComponent {
         alert('You have successfully registered!');
         setTimeout(() => {
           this.registerFormGroup.reset();
-          // this.router.navigate(['', '/admin/login']);
-          console.log(this.router.navigate(['/admin/login']));
+          console.log(this.router.navigate(['/login']));
         }, 1000);
       });
     }

@@ -15,8 +15,9 @@ export class AppComponent {
 
   ngDoCheck() {
     if (
-      window.location.pathname === '/admin/register' ||
-      window.location.pathname === '/admin/login'
+      window.location.pathname === '/register' ||
+      window.location.pathname === '/login' ||
+      window.location.pathname === '/forgot-password'
     ) {
       this.showContent = false;
     } else {
