@@ -34,4 +34,13 @@ export class CommonService {
     let idUrl = this.appointmentUrl + '/' + id;
     return this.http.put(idUrl, data);
   }
+
+  //login
+  login(data: any) {
+    console.log('login method fired');
+    return this.http.get(
+      `http://localhost:3000/appointments?name=${data}&email=${data}`,
+      data
+    );
+  }
 }
