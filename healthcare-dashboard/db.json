@@ -1,167 +1,245 @@
 {
-    "user": [
-        {
-        "id": 1,
-        "name": "John",
-        "email": "john@email.com"
+  "user": [
+    {
+      "id": 1,
+      "name": "John",
+      "email": "john@email.com"
     },
     {
-        "id": 2,
-        "name": "tom",
-        "email": "tom@email.com"
+      "id": 2,
+      "name": "tom",
+      "email": "tom@email.com"
     },
     {
-        "id": 3,
-        "name": "cam",
-        "email": "cam@email.com"
+      "id": 3,
+      "name": "cam",
+      "email": "cam@email.com"
     },
     {
-        "id": 4,
-        "name": "felix",
-        "email": "felix@email.com"
+      "id": 4,
+      "name": "felix",
+      "email": "felix@email.com"
     },
     {
-        "id": 5,
-        "name": "adam",
-        "email": "adam@email.com"
+      "id": 5,
+      "name": "adam",
+      "email": "adam@email.com"
     },
     {
-        "id": 6,
-        "name": "carry",
-        "email": "carry@email.com"
+      "id": 6,
+      "name": "carry",
+      "email": "carry@email.com"
     },
     {
-        "id": 7,
-        "name": "josh",
-        "email": "josh@email.com"
+      "id": 7,
+      "name": "josh",
+      "email": "josh@email.com"
     },
     {
-        "id": 38,
-        "name": "robert",
-        "email": "robert@email.com"
+      "id": 38,
+      "name": "robert",
+      "email": "robert@email.com"
     },
     {
-        "id": 9,
-        "name": "shown",
-        "email": "shown@email.com"
+      "id": 9,
+      "name": "shown",
+      "email": "shown@email.com"
     },
     {
-        "id": 10,
-        "name": "harry",
-        "email": "harry@email.com"
+      "id": 10,
+      "name": "harry",
+      "email": "harry@email.com"
     }
-],
-"appointments": [
+  ],
+  "appointments": [
     {
-        "id": 1,
-        "image": "user-img1.png",
-        "name": "Leslie Alexander",
-        "email": "lesie.alexander@example.com",
-        "date": "04/10/20200",
-        "visitTime": "10:15-09:45am",
-        "doctor": "Dr. Jacob Jones",
-        "conditions": "Depression"
-      },
-      {
-        "id": 2,
-        "image": "user-img2.png",
-        "name": "Ronald Richards",
-        "email": "ronald.richards@example.com",
-        "date": "02/10/2020",
-        "visitTime": "05:15-09:45am",
-        "doctor": "Dr. Theresa Webb",
-        "conditions": "Mumps Stage II"
-      },
-      {
-        "id": 3,
-        "image": "user-img3.png",
-        "name": "Jane Cooper",
-        "email": "jane.cooper@example.com",
-        "date": "17/12/2020",
-        "visitTime": "09:15-09:45am",
-        "doctor": "Dr. Jacob Jones",
-        "conditions": "Depression"
-      },
-      {
-        "id": 4,
-        "image": "user-img4.png",
-        "name": "Robert Fox",
-        "email": "robert.fox@gmail.com",
-        "date": "18/10/2020",
-        "visitTime": "04:15-09:45am",
-        "doctor": "Dr. Arlene McCoy",
-        "conditions": "Arthritis"
-      },
-      {
-        "id": 5,
-        "image": "user-img4.png",
-        "name": "Jenny Wilson",
-        "email": "jenny.wilson@example.com",
-        "date": "20/10/2020",
-        "visitTime": "06:15-09:45am",
-        "doctor": "Dr. Esther Howard",
-        "conditions": "Fracture"
-      },
-      {
-        "id": 6,
-        "image": "user-img3.png",
-        "name": "Jane Cooper",
-        "email": "jane.cooper@example.com",
-        "date": "17/12/2020",
-        "visitTime": "09:15-09:45am",
-        "doctor": "Dr. Jacob Jones",
-        "conditions": "Depression"
-      },
-      {
-        "id": 7,
-        "image": "user-img2.png",
-        "name": "Ronald Richards",
-        "email": "ronald.richards@example.com",
-        "date": "02/10/2020",
-        "visitTime": "05:15-09:45am",
-        "doctor": "Dr. Theresa Webb",
-        "conditions": "Mumps Stage II"
-      },
-      {
-        "id": 8,
-        "image": "user-img1.png",
-        "name": "Leslie Alexander",
-        "email": "lesie.alexander@example.com",
-        "date": "04/10/20200",
-        "visitTime": "10:15-09:45am",
-        "doctor": "Dr. Jacob Jones",
-        "conditions": "Depression"
-      },
-      {
-        "id": 9,
-        "image": "user-img1.png",
-        "name": "Leslie Alexander",
-        "email": "lesie.alexander@example.com",
-        "date": "04/10/20200",
-        "visitTime": "10:15-09:45am",
-        "doctor": "Dr. Jacob Jones",
-        "conditions": "Depression"
-      },
-      {
-        "id": 10,
-        "image": "user-img1.png",
-        "name": "Leslie Alexander",
-        "email": "lesie.alexander@example.com",
-        "date": "04/10/20200",
-        "visitTime": "10:15-09:45am",
-        "doctor": "Dr. Jacob Jones",
-        "conditions": "Depression"
-      },
-      {
-        "id": 11,
-        "image": "user-img1.png",
-        "name": "Leslie Alexander",
-        "email": "lesie.alexander@example.com",
-        "date": "04/10/20200",
-        "visitTime": "10:15-09:45am",
-        "doctor": "Dr. Jacob Jones",
-        "conditions": "Depression"
-      }
-
-]
+      "id": 1,
+      "image": "user-img1.png",
+      "name": "Leslie Alexander",
+      "email": "lesie.alexander@example.com",
+      "date": "04/10/20200",
+      "visitTime": "10:15-09:45am",
+      "doctor": "Dr. Jacob Jones",
+      "conditions": "Depression"
+    },
+    {
+      "id": 2,
+      "image": "user-img2.png",
+      "name": "Ronald Richards",
+      "email": "ronald.richards@example.com",
+      "date": "02/10/2020",
+      "visitTime": "05:15-09:45am",
+      "doctor": "Dr. Theresa Webb",
+      "conditions": "Mumps Stage II"
+    },
+    {
+      "id": 3,
+      "image": "user-img3.png",
+      "name": "Jane Cooper",
+      "email": "jane.cooper@example.com",
+      "date": "17/12/2020",
+      "visitTime": "09:15-09:45am",
+      "doctor": "Dr. Jacob Jones",
+      "conditions": "Depression"
+    },
+    {
+      "id": 4,
+      "image": "user-img4.png",
+      "name": "Robert Fox",
+      "email": "robert.fox@gmail.com",
+      "date": "18/10/2020",
+      "visitTime": "04:15-09:45am",
+      "doctor": "Dr. Arlene McCoy",
+      "conditions": "Arthritis"
+    },
+    {
+      "id": 5,
+      "image": "user-img4.png",
+      "name": "Jenny Wilson",
+      "email": "jenny.wilson@example.com",
+      "date": "20/10/2020",
+      "visitTime": "06:15-09:45am",
+      "doctor": "Dr. Esther Howard",
+      "conditions": "Fracture"
+    },
+    {
+      "id": 6,
+      "image": "user-img3.png",
+      "name": "Jane Cooper",
+      "email": "jane.cooper@example.com",
+      "date": "17/12/2020",
+      "visitTime": "09:15-09:45am",
+      "doctor": "Dr. Jacob Jones",
+      "conditions": "Depression"
+    },
+    {
+      "id": 7,
+      "image": "user-img2.png",
+      "name": "Ronald Richards",
+      "email": "ronald.richards@example.com",
+      "date": "02/10/2020",
+      "visitTime": "05:15-09:45am",
+      "doctor": "Dr. Theresa Webb",
+      "conditions": "Mumps Stage II"
+    },
+    {
+      "id": 8,
+      "image": "user-img1.png",
+      "name": "Leslie Alexander",
+      "email": "lesie.alexander@example.com",
+      "date": "04/10/20200",
+      "visitTime": "10:15-09:45am",
+      "doctor": "Dr. Jacob Jones",
+      "conditions": "Depression"
+    },
+    {
+      "id": 9,
+      "image": "user-img1.png",
+      "name": "Leslie Alexander",
+      "email": "lesie.alexander@example.com",
+      "date": "04/10/20200",
+      "visitTime": "10:15-09:45am",
+      "doctor": "Dr. Jacob Jones",
+      "conditions": "Depression"
+    },
+    {
+      "id": 10,
+      "image": "user-img1.png",
+      "name": "Leslie Alexander",
+      "email": "lesie.alexander@example.com",
+      "date": "04/10/20200",
+      "visitTime": "10:15-09:45am",
+      "doctor": "Dr. Jacob Jones",
+      "conditions": "Depression"
+    },
+    {
+      "id": 11,
+      "image": "user-img1.png",
+      "name": "Leslie Alexander",
+      "email": "lesie.alexander@example.com",
+      "date": "04/10/20200",
+      "visitTime": "10:15-09:45am",
+      "doctor": "Dr. Jacob Jones",
+      "conditions": "Depression"
+    }
+  ],
+  "registrations": [
+    {
+      "id": 1,
+      "firstName": "john",
+      "lastName": "Mark",
+      "userEmail": "john@email.com",
+      "userPassword": "john"
+    },
+    {
+      "firstName": "pooja",
+      "lastName": "chauhan",
+      "userEmail": "poojagmail.com",
+      "userPassword": "pooja",
+      "id": 2
+    },
+    {
+      "firstName": "pooja",
+      "lastName": "chauhan",
+      "userEmail": "pooja123@gmail.com",
+      "userPassword": "pooja123",
+      "id": 3
+    },
+    {
+      "firstName": "kanchan",
+      "lastName": "kaur",
+      "userEmail": "kanchan@gmail.com",
+      "userPassword": "kanchan",
+      "id": 4
+    },
+    {
+      "firstName": "mahi",
+      "lastName": "salaria",
+      "userEmail": "mahi@gmail.com",
+      "userPassword": "mahi",
+      "id": 5
+    },
+    {
+      "firstName": "john",
+      "lastName": "smith",
+      "userEmail": "john@gmail.com",
+      "userPassword": "john",
+      "id": 6
+    },
+    {
+      "firstName": "Raj",
+      "lastName": "Kumar",
+      "userEmail": "raj@gmail.com",
+      "userPassword": "raj",
+      "id": 7
+    },
+    {
+      "firstName": "kanchan",
+      "lastName": "deep",
+      "userEmail": "kanchandeep@gmail.com",
+      "userPassword": "kanchandeep",
+      "id": 8
+    },
+    {
+      "firstName": "param",
+      "lastName": "jeet",
+      "userEmail": "param@gmail.com",
+      "userPassword": "param",
+      "id": 9
+    },
+    {
+      "firstName": "john",
+      "lastName": "smith",
+      "userEmail": "john@user",
+      "userPassword": "john",
+      "id": 10
+    },
+    {
+      "firstName": "pooja",
+      "lastName": "chauhan",
+      "userEmail": "rahul@gmail.com",
+      "userPassword": "35235",
+      "id": 11
+    }
+  ]
 }

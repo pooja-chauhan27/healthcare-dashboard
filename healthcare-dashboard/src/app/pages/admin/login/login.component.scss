@@ -1,0 +1,14 @@
+
+.login-form {
+    .card {
+      width: 550px;
+      .show-password {
+        right: 12px;
+        top: 7px;
+        &:hover {
+          cursor: pointer;
+          color: rgb(0, 153, 255);
+        }
+      }
+    }
+  }

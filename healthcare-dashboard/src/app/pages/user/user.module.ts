@@ -5,9 +5,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { AppointmentComponent } from './appointment/appointment.component';
 import { EditComponent } from './edit/edit.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { PatientsComponent } from './patients/patients.component';
 
 @NgModule({
-  declarations: [DashboardComponent, AppointmentComponent, EditComponent],
+  declarations: [DashboardComponent, AppointmentComponent, EditComponent, PatientsComponent],
   imports: [
     CommonModule,
     UserRoutingModule,

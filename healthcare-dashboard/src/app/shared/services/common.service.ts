@@ -7,12 +7,13 @@ import { HttpClient } from '@angular/common/http';
 })
 export class CommonService {
   // url for users and appointments
+  public baseUrl = 'http://localhost:3000';
   public userUrl = 'http://localhost:3000/user';
   public appointmentUrl = 'http://localhost:3000/appointments';
   public isCollapsed = true;
 
   constructor(private http: HttpClient) {}
-  
+
   // get request for appointments
   getAppointment(): Observable<any> {
     return this.http.get<any>(this.appointmentUrl);
@@ -37,10 +38,26 @@ export class CommonService {
   }
 
   //login
+  // login(data: any) {
+  //   return this.http.get(
+  //     `http://localhost:3000/registrations?userEmail=param@gmail.com&&userPassword=param`,
+  //     data
+  //   );
+  // }
   login(data: any) {
     return this.http.get(
-      `http://localhost:3000/appointments?name=${data}&email=${data}`,
+      `http://localhost:3000/registrations?userEmail=${data}&&userPassword=${data}`,
       data
     );
+  }
+
+  // register user
+  registerUser(data: any) {
+    return this.http.post(this.baseUrl + '/registrations', data);
+  }
+
+  // get register user information
+  getRegisterUser(): Observable<any> {
+    return this.http.get<any>(this.baseUrl + '/registrations');
   }
 }

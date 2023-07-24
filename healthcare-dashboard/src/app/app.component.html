@@ -1,5 +1,5 @@
 <!-- layout -->
-<div class="bg-light">
+<div class="bg-light" *ngIf="showContent">
   <aside>
     <app-aside></app-aside>
   </aside>
@@ -13,3 +13,9 @@
   </main>
 </div>
 <!-- /layout -->
+
+<!-- default layout -->
+<div *ngIf="!showContent">
+  <router-outlet></router-outlet>
+</div>
+<!-- default layout -->

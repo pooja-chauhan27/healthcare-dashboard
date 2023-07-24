@@ -10,20 +10,34 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent {
   formObj: any;
+  public show: boolean = false;
   loginFormGroup = new FormGroup({
-    userName: new FormControl('', [Validators.required]),
+    // firstName: new FormControl('', [Validators.required]),
+    // lastName: new FormControl('', [Validators.required]),
     userEmail: new FormControl('', [Validators.required]),
+    userPassword: new FormControl('', [Validators.required]),
   });
   constructor(private commonService: CommonService) {}
   ngOnInit() {
     this.loginFormGroup = new FormGroup({
-      userName: new FormControl('', [Validators.required]),
+      // firstName: new FormControl('', [Validators.required]),
+      // lastName: new FormControl('', [Validators.required]),
       userEmail: new FormControl('', [Validators.required]),
+      userPassword: new FormControl('', [Validators.required]),
     });
   }
   login() {
-    this.commonService.login(this.loginFormGroup.value).subscribe((result) => {
-      console.log(result);
-    });
+    if (this.loginFormGroup.valid) {
+      this.commonService
+        .login(this.loginFormGroup.value)
+        .subscribe((result) => {
+          this.formObj = result;
+        });
+    }
+  }
+
+  // show password function
+  showPassword() {
+    this.show = !this.show;
   }
 }

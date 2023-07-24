@@ -38,3 +38,11 @@ body {
 .py-12 {
   padding-block: 18px !important;
 }
+.show-password {
+  right: 12px;
+  top: 18px;
+  &:hover {
+    cursor: pointer;
+    color: $primary-hover;
+  }
+}

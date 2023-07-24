@@ -10,11 +10,9 @@ export class HeaderComponent {
   isCollapsed: boolean = this.commonService.isCollapsed;
   constructor(private commonService: CommonService) {}
 
+  // aside navbar toggle
   closeMenu() {
     this.isCollapsed = !this.isCollapsed;
     this.commonService.isCollapsed = this.isCollapsed;
-    console.log(
-      'header : ' + (this.commonService.isCollapsed = this.isCollapsed)
-    );
   }
 }
