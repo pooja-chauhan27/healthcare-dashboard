@@ -2,16 +2,10 @@
 //=================register scss=====================//
 //=================================================//
 .register-form {
-    .card {
-      width: 400px;
-      // .show-password {
-      //   right: 12px;
-      //   top: 18px;
-      //   &:hover {
-      //     cursor: pointer;
-      //     color: rgb(0, 153, 255);
-      //   }
-      // }
-    }
+  .card {
+    width: 400px;
   }
-  
+  .btn {
+    padding-block: 12px !important;
+  }
+}

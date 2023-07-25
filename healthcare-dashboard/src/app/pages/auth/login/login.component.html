@@ -1,38 +1,20 @@
-<section class="login-form bg-light d-none">
-    <div class="container-fluid">
-      <div class="d-flex justify-content-center align-items-center vh-100">
-        <div class="border-0 card mx-auto shadow-sm" style="width: 550px">
-          <div
-          class="card-header subtitle-lg text-dark p-4 border-light bg-body-tertiary"
-        >
-          Login Form
+<section class="login-form bg-white">
+  <div class="container-fluid">
+    <div class="d-flex justify-content-center align-items-center vh-100">
+      <div class="border-0 card mx-auto shadow">
+        <div class="card-header border-0 bg-white p-4 pb-0">
+          <h4 class="text-dark fw-bold">Login</h4>
+          <p class="text-dark mb-0">Stay Updated in Your Professional World</p>
         </div>
+
         <div class="card-body p-4">
           <form [formGroup]="loginFormGroup" (ngSubmit)="login()">
-            <!-- <div class="mb-3">
-              <input
-                type="text"
-                class="form-control rounded-2 text-dark"
-                formControlName="firstName"
-                placeholder="First Name"
-                id="firstName"
-              />
-            </div>
-            <div class="mb-3">
-              <input
-                type="text"
-                class="form-control rounded-2 text-dark"
-                formControlName="lastName"
-                placeholder="Last Name"
-                id="lastName"
-              />
-            </div> -->
             <div class="mb-3">
               <input
                 type="email"
-                class="form-control rounded-2 text-dark"
+                class="form-control rounded-2 text-dark border-dark py-3"
                 formControlName="userEmail"
-                id="email"
+                id="userEmail"
                 placeholder="Email address"
                 aria-describedby="emailHelp"
               />
@@ -40,74 +22,25 @@
             <div class="mb-3 d-flex position-relative">
               <input
                 [type]="show ? 'text' : 'password'"
-                class="form-control rounded-2 text-dark"
+                class="form-control rounded-2 text-dark border-dark py-3"
                 formControlName="userPassword"
-                id="password"
+                id="userPassword"
                 placeholder="Password"
                 aria-describedby="password"
               />
               <span
-                class="show-password small position-absolute"
+                class="show-password small position-absolute text-primary fw-semibold"
                 (mouseenter)="showPassword()"
                 (mouseleave)="showPassword()"
                 >show</span
               >
             </div>
-            <button
-              type="submit"
-              class="btn btn-primary text-white w-100 rounded-pill p-2"
-            >
-              Login
-            </button>
-          </form>
-        </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="login-form bg-white">
-    <div class="container-fluid">
-      <div class="d-flex justify-content-center align-items-center vh-100">
-        <div class="border-0 card mx-auto shadow">
-          <div class="card-header border-0 bg-white p-4 pb-0">
-            <h4 class="text-dark fw-bold">Login</h4>
-            <p class="text-dark mb-0">Stay Updated in Your Professional World</p>
-          </div>
-  
-          <div class="card-body p-4">
-            <form [formGroup]="loginFormGroup" (ngSubmit)="login()">
-              <div class="mb-3">
-                <input
-                  type="email"
-                  class="form-control rounded-2 text-dark border-dark py-3"
-                  formControlName="userEmail"
-                  id="userEmail"
-                  placeholder="Email address"
-                  aria-describedby="emailHelp"
-                />
-              </div>
-              <div class="mb-3 d-flex position-relative">
-                <input
-                  [type]="show ? 'text' : 'password'"
-                  class="form-control rounded-2 text-dark border-dark py-3"
-                  formControlName="userPassword"
-                  id="userPassword"
-                  placeholder="Password"
-                  aria-describedby="password"
-                />
-                <span
-                  class="show-password small position-absolute text-primary fw-semibold"
-                  (mouseenter)="showPassword()"
-                  (mouseleave)="showPassword()"
-                  >show</span
-                >
-              </div>
-              <div class="mb-3 fw-bold text-primary">
-                <a class="text-decoration-none" routerLink="/forgot-password"
-                  >Forgot Password?</a
-                >
-              </div>
-              <!-- <div class="mb-3">
+            <div class="mb-3 fw-bold text-primary">
+              <a class="text-decoration-none" routerLink="/forgot-password"
+                >Forgot Password?</a
+              >
+            </div>
+            <!-- <div class="mb-3">
                 <input
                   class="form-control rounded-2 text-dark border-dark py-3"
                   formControlName="phone"
@@ -116,16 +49,15 @@
                   aria-describedby="phone"
                 />
               </div> -->
-              <button
-                type="submit"
-                class="btn btn-primary text-white w-100 rounded-pill py-3"
-              >
-                Login
-              </button>
-            </form>
-          </div>
+            <button
+              type="submit"
+              class="btn btn-primary text-white w-100 rounded-pill"
+            >
+              Login
+            </button>
+          </form>
         </div>
       </div>
     </div>
-  </section>
-  
+  </div>
+</section>

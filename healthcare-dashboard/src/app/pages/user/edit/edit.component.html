@@ -1,11 +1,13 @@
-<section>
+<section class="d-none">
   <div class="container-fluid">
     <div class="card w-75 mx-auto">
       <div class="card-header subtitle-lg text-dark p-4">Edit Form</div>
       <div class="card-body">
         <form [formGroup]="editFormGroup">
           <div class="mb-3">
-            <label for="name" class="form-label subtitle-md text-dark">Name</label>
+            <label for="name" class="form-label subtitle-md text-dark"
+              >Name</label
+            >
             <input
               type="text"
               class="form-control"
@@ -14,7 +16,9 @@
             />
           </div>
           <div class="mb-3">
-            <label for="email" class="form-label subtitle-md text-dark">Email address</label>
+            <label for="email" class="form-label subtitle-md text-dark"
+              >Email address</label
+            >
             <input
               type="email"
               class="form-control"
@@ -24,7 +28,9 @@
             />
           </div>
           <div class="mb-3">
-            <label for="date" class="form-label subtitle-md text-dark">Date</label>
+            <label for="date" class="form-label subtitle-md text-dark"
+              >Date</label
+            >
             <input
               type="text"
               class="form-control"
@@ -33,7 +39,9 @@
             />
           </div>
           <div class="mb-3">
-            <label for="visitTime" class="form-label subtitle-md text-dark">Visit Time</label>
+            <label for="visitTime" class="form-label subtitle-md text-dark"
+              >Visit Time</label
+            >
             <input
               type="text"
               class="form-control"
@@ -42,7 +50,9 @@
             />
           </div>
           <div class="mb-3">
-            <label for="doctor" class="form-label subtitle-md text-dark">Doctor</label>
+            <label for="doctor" class="form-label subtitle-md text-dark"
+              >Doctor</label
+            >
             <input
               type="text"
               class="form-control"
@@ -51,7 +61,9 @@
             />
           </div>
           <div class="mb-3">
-            <label for="condition" class="form-label subtitle-md text-dark">Condition</label>
+            <label for="condition" class="form-label subtitle-md text-dark"
+              >Condition</label
+            >
             <input
               type="text"
               class="form-control"
@@ -78,3 +90,116 @@
     </div>
   </div>
 </section>
+<!-- edit form -->
+<section class="edit-form bg-light">
+  <div class="container-fluid">
+    <div class="d-flex justify-content-center align-items-center">
+      <div class="border-0 card mx-auto shadow">
+        <div class="card-header border-0 bg-white p-4 pb-0">
+          <h4 class="text-dark fw-bold">Edit Form</h4>
+        </div>
+
+        <div class="card-body p-4">
+          <form [formGroup]="editFormGroup" (ngSubmit)="update()">
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control rounded-2 text-dark border-dark py-3"
+                formControlName="name"
+                id="name"
+                placeholder="Name"
+                aria-describedby="name"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control rounded-2 text-dark border-dark py-3"
+                formControlName="email"
+                id="email"
+                placeholder="Email address"
+                aria-describedby="email"
+              />
+            </div>
+            <div class="mb-3 d-flex position-relative">
+              <input
+                [type]="show ? 'text' : 'password'"
+                class="form-control rounded-2 text-dark border-dark py-3"
+                formControlName="userPassword"
+                id="userPassword"
+                placeholder="Password"
+                aria-describedby="password"
+              />
+              <span
+                class="show-password small position-absolute text-primary fw-semibold"
+                (mouseenter)="showPassword()"
+                (mouseleave)="showPassword()"
+                >show</span
+              >
+            </div>
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control rounded-2 text-dark border-dark py-3"
+                formControlName="date"
+                id="date"
+                placeholder="Date"
+                aria-describedby="date"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control rounded-2 text-dark border-dark py-3"
+                formControlName="visitTime"
+                id="visitTime"
+                placeholder="Visit Time"
+                aria-describedby="visitTime"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control rounded-2 text-dark border-dark py-3"
+                formControlName="doctor"
+                id="doctor"
+                placeholder="Doctor"
+                aria-describedby="doctor"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control rounded-2 text-dark border-dark py-3"
+                formControlName="conditions"
+                id="condition"
+                placeholder="Conditions"
+                aria-describedby="condition"
+              />
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <button
+                  (click)="cancel()"
+                  type="button"
+                  class="btn btn-danger text-white w-100 rounded-pill"
+                >
+                  Cancel
+                </button>
+              </div>
+              <div class="col-6">
+                <button
+                  type="submit"
+                  class="btn btn-primary text-white w-100 rounded-pill"
+                >
+                  Update
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /edit form -->

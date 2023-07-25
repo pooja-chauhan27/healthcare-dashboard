@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./edit.component.scss'],
 })
 export class EditComponent {
+  public show: boolean = false;
   user: any = [];
   editFormGroup = new FormGroup({
     image: new FormControl(''),
@@ -58,10 +59,15 @@ export class EditComponent {
     }, 1000);
   }
   // cancel function
-  cancel(){
+  cancel() {
     setTimeout(() => {
       alert('You have canceled!');
       this.router.navigate(['', '/']);
     }, 1000);
+  }
+
+  // show password function
+  showPassword() {
+    this.show = !this.show;
   }
 }
