@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
-import { HttpClient, HttpResponse } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root',
@@ -16,7 +17,7 @@ export class CommonService {
   // authentication guard
   public authentication: boolean = false;
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private router: Router) {}
 
   // get request for appointments
   getAppointment(): Observable<any> {
@@ -49,6 +50,11 @@ export class CommonService {
   // login
   login() {
     return this.http.get<any>(`http://localhost:3000/registrations`);
+  }
+
+  //logout functionality
+  logout() {
+    localStorage.removeItem('isLogged');
   }
 
   // register user

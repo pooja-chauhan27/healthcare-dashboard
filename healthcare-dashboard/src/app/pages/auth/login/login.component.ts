@@ -38,6 +38,9 @@ export class LoginComponent {
           user.userEmail === `admin@gmail.com` &&
           user.userPassword === 'admin'
         ) {
+          localStorage.setItem('isLogged', user.userEmail);
+          this.commonService.adminDashboard = true;
+          this.commonService.userDashboard = false;
           Swal.fire({
             icon: 'success',
             title: 'Admin has successfully logged in!!',
@@ -46,6 +49,9 @@ export class LoginComponent {
           });
           this.router.navigate(['admin-dashboard']);
         } else {
+          localStorage.setItem('isLogged', user.userEmail);
+          this.commonService.adminDashboard = false;
+          this.commonService.userDashboard = true;
           Swal.fire({
             icon: 'success',
             title: 'User has successfully logged in!!',
