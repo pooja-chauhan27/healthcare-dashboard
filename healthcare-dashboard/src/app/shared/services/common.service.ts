@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
-import { HttpClient } from '@angular/common/http';
+import { Observable, of } from 'rxjs';
+import { HttpClient, HttpResponse } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root',
@@ -37,16 +37,15 @@ export class CommonService {
     return this.http.put(idUrl, data);
   }
 
-  //login
-  // login(data: any) {
-  //   return this.http.get(
-  //     `http://localhost:3000/registrations?userEmail=param@gmail.com&&userPassword=param`,
-  //     data
-  //   );
+  //post data to the API
+  // addAppointment(data: any) {
+  //   return this.http.post(`http://localhost:3000/appointments`, data);
   // }
+
+  // login
   login(data: any) {
-    return this.http.get(
-      `http://localhost:3000/registrations?userEmail=${data}&&userPassword=${data}`,
+    return this.http.post(
+      `http://localhost:3000/registrations?userEmail=${data.userEmail}&&userPassword=${data.userPassword}`,
       data
     );
   }

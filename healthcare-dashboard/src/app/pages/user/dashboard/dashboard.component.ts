@@ -16,10 +16,9 @@ export class DashboardComponent {
     this.commonService.getAppointment().subscribe((response: any[]) => {
       this.appointments = response;
     });
-
-    //delete id
   }
 
+  // delete appointment
   delete(id: any, i: any) {
     if (confirm('Are you sure you want to delete!') == true) {
       this.appointments.splice(i, 1);

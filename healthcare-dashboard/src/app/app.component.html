@@ -1,21 +1,2 @@
-<!-- layout -->
-<div class="bg-light" *ngIf="showContent">
-  <aside>
-    <app-aside></app-aside>
-  </aside>
-  <main class="px-4">
-    <div>
-      <app-header></app-header>
-    </div>
-    <div class="main-content">
-      <router-outlet></router-outlet>
-    </div>
-  </main>
-</div>
-<!-- /layout -->
-
-<!-- default layout -->
-<div *ngIf="!showContent">
   <router-outlet></router-outlet>
-</div>
-<!-- default layout -->
+

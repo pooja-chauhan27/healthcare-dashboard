@@ -12,16 +12,12 @@ export class LoginComponent {
   formObj: any;
   public show: boolean = false;
   loginFormGroup = new FormGroup({
-    // firstName: new FormControl('', [Validators.required]),
-    // lastName: new FormControl('', [Validators.required]),
     userEmail: new FormControl('', [Validators.required]),
     userPassword: new FormControl('', [Validators.required]),
   });
   constructor(private commonService: CommonService) {}
   ngOnInit() {
     this.loginFormGroup = new FormGroup({
-      // firstName: new FormControl('', [Validators.required]),
-      // lastName: new FormControl('', [Validators.required]),
       userEmail: new FormControl('', [Validators.required]),
       userPassword: new FormControl('', [Validators.required]),
     });

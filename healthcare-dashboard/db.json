@@ -251,33 +251,6 @@
       "userPassword": "35235",
       "phone": "987654321",
       "id": 11
-    },
-    {
-      "firstName": "rammmmm",
-      "lastName": "kummmmm",
-      "userEmail": "ttt@yyyy",
-      "userPassword": "12345",
-      "phone": "12345",
-      "confirmPassword": "12345",
-      "id": 12
-    },
-    {
-      "firstName": "wewqewqe",
-      "lastName": "weqweq",
-      "userEmail": "qweqwe@wewe",
-      "userPassword": "1212",
-      "phone": "12121212121",
-      "confirmPassword": "1212",
-      "id": 13
-    },
-    {
-      "firstName": "ffff",
-      "lastName": "fff",
-      "userEmail": "fffd",
-      "userPassword": "ghjh",
-      "phone": "ffff",
-      "confirmPassword": "fffff",
-      "id": 14
     }
   ]
 }

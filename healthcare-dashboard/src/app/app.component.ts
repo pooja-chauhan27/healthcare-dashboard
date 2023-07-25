@@ -1,6 +1,4 @@
-import { Component, SimpleChanges } from '@angular/core';
-import { CommonService } from './shared/services/common.service';
-import { Router } from '@angular/router';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -9,19 +7,4 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'healthcare-dashboard';
-  public showContent: boolean = true;
-  constructor(private commonService: CommonService, private router: Router) {}
-  ngOnInit() {}
-
-  ngDoCheck() {
-    if (
-      window.location.pathname === '/register' ||
-      window.location.pathname === '/login' ||
-      window.location.pathname === '/forgot-password'
-    ) {
-      this.showContent = false;
-    } else {
-      this.showContent = true;
-    }
-  }
 }

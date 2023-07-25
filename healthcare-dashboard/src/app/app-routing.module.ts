@@ -1,27 +1,52 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { DefaultLayoutComponent } from './shared/layout/default-layout/default-layout.component';
 
 const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    loadChildren: () =>
-      import('./pages/user/user.module').then((module) => module.UserModule),
+    component: DefaultLayoutComponent,
+    children: [
+      {
+        path: '',
+        loadChildren: () =>
+          import('./pages/user/user.module').then(
+            (module) => module.UserModule
+          ),
+      },
+    ],
   },
   {
     path: '',
-    loadChildren: () =>
-      import('./pages/user/user.module').then((module) => module.UserModule),
-  },
-  {
-    path: 'admin',
-    loadChildren: () =>
-      import('./pages/admin/admin.module').then((module) => module.AdminModule),
+    component: DefaultLayoutComponent,
+    children: [
+      {
+        path: '',
+        loadChildren: () =>
+          import('./pages/admin/admin.module').then(
+            (module) => module.AdminModule
+          ),
+      },
+    ],
   },
   {
     path: '',
     loadChildren: () =>
       import('./pages/auth/auth.module').then((module) => module.AuthModule),
+  },
+  {
+    path: '',
+    component: DefaultLayoutComponent,
+    children: [
+      {
+        path: '',
+        loadChildren: () =>
+          import('./pages/user/user.module').then(
+            (module) => module.UserModule
+          ),
+      },
+    ],
   },
 ];
 
