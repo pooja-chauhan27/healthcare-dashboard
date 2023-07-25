@@ -1,139 +1,144 @@
 <section class="register-form bg-white">
   <div class="container-fluid">
-    <div class="d-flex justify-content-center align-items-center vh-100">
-      <div class="border-0 card mx-auto shadow">
-        <div class="card-header border-0 bg-white p-4 pb-0">
-          <h4 class="text-dark fw-bold">Registration Form</h4>
-          <p class="text-dark mb-0">Stay Updated in Your Professional World</p>
-        </div>
-
-        <div class="card-body p-4 pt-3">
-          <form [formGroup]="registerFormGroup" (ngSubmit)="register()">
-            <div class="mb-3">
-              <input
-                type="text"
-                class="form-control rounded-2 text-dark py-3"
-                formControlName="name"
-                placeholder="Name"
-                id="name"
-                [ngClass]="[
-                  !registerFormGroup.controls['name'].valid &&
-                  (registerFormGroup.controls['name'].dirty ||
-                    registerFormGroup.controls['name'].touched)
-                    ? 'border-danger'
-                    : registerFormGroup.controls['name'].valid
-                    ? 'border-primary'
-                    : ''
-                ]"
-                required
-              />
+    <div class="row">
+      <div class="col-12">
+        <div class="d-flex justify-content-center align-items-center vh-100">
+          <div class="border-0 card mx-auto shadow">
+            <div class="card-header border-0 bg-white p-4 pb-0">
+              <h4 class="text-dark fw-bold">Registration Form</h4>
+              <p class="text-dark mb-0">Stay Updated in Your Professional World</p>
             </div>
-            <div class="mb-3">
-              <input
-                type="email"
-                class="form-control rounded-2 text-dark py-3"
-                formControlName="userEmail"
-                id="email"
-                placeholder="Email address"
-                aria-describedby="emailHelp"
-                [ngClass]="[
-                  !registerFormGroup.controls['userEmail'].valid &&
-                  (registerFormGroup.controls['userEmail'].dirty ||
-                    registerFormGroup.controls['userEmail'].touched)
-                    ? 'border-danger'
-                    : registerFormGroup.controls['userEmail'].valid
-                    ? 'border-primary'
-                    : ''
-                ]"
-                required
-              />
+    
+            <div class="card-body p-4 pt-3 bg-white">
+              <form [formGroup]="registerFormGroup" (ngSubmit)="register()">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control rounded-2 text-dark py-3"
+                    formControlName="name"
+                    placeholder="Name"
+                    id="name"
+                    [ngClass]="[
+                      !registerFormGroup.controls['name'].valid &&
+                      (registerFormGroup.controls['name'].dirty ||
+                        registerFormGroup.controls['name'].touched)
+                        ? 'border-danger'
+                        : registerFormGroup.controls['name'].valid
+                        ? 'border-primary'
+                        : ''
+                    ]"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control rounded-2 text-dark py-3"
+                    formControlName="userEmail"
+                    id="email"
+                    placeholder="Email address"
+                    aria-describedby="emailHelp"
+                    [ngClass]="[
+                      !registerFormGroup.controls['userEmail'].valid &&
+                      (registerFormGroup.controls['userEmail'].dirty ||
+                        registerFormGroup.controls['userEmail'].touched)
+                        ? 'border-danger'
+                        : registerFormGroup.controls['userEmail'].valid
+                        ? 'border-primary'
+                        : ''
+                    ]"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    class="form-control rounded-2 text-dark py-3"
+                    formControlName="phone"
+                    id="phone"
+                    placeholder="Phone Number"
+                    aria-describedby="phone"
+                    [ngClass]="[
+                      !registerFormGroup.controls['phone'].valid &&
+                      (registerFormGroup.controls['phone'].dirty ||
+                        registerFormGroup.controls['phone'].touched)
+                        ? 'border-danger'
+                        : registerFormGroup.controls['phone'].valid
+                        ? 'border-primary'
+                        : ''
+                    ]"
+                    required
+                  />
+                </div>
+                <div class="mb-3 d-flex position-relative">
+                  <input
+                    [type]="show ? 'text' : 'password'"
+                    class="form-control rounded-2 text-dark py-3"
+                    formControlName="userPassword"
+                    id="password"
+                    placeholder="Password"
+                    aria-describedby="password"
+                    [ngClass]="[
+                      !registerFormGroup.controls['userPassword'].valid &&
+                      (registerFormGroup.controls['userPassword'].dirty ||
+                        registerFormGroup.controls['userPassword'].touched)
+                        ? 'border-danger'
+                        : registerFormGroup.controls['userPassword'].valid
+                        ? 'border-primary'
+                        : ''
+                    ]"
+                    required
+                  />
+                  <span
+                    class="show-password small position-absolute text-primary fw-semibold"
+                    (mouseenter)="showPassword()"
+                    (mouseleave)="showPassword()" [innerHtml]="show ? 'hide' : 'show'"
+                    ></span
+                  >
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="password"
+                    class="form-control rounded-2 text-dark py-3"
+                    formControlName="confirmPassword"
+                    id="confirmPassword"
+                    placeholder="Confirm Password"
+                    aria-describedby="Confirm Password"
+                    [ngClass]="[
+                      !registerFormGroup.controls['confirmPassword'].valid &&
+                      (registerFormGroup.controls['confirmPassword'].dirty ||
+                        registerFormGroup.controls['confirmPassword'].touched)
+                        ? 'border-danger'
+                        : registerFormGroup.controls['confirmPassword'].valid
+                        ? 'border-primary'
+                        : ''
+                    ]"
+                    required
+                  />
+                  <span *ngIf="!passwordMatch" class="small text-danger"
+                    >Password doesn't match!</span
+                  >
+                </div>
+                <button [disabled]="registerFormGroup.invalid"
+                  type="submit"
+                  class="btn btn-primary text-white w-100 rounded-pill mb-3"
+                >
+                  Register
+                </button>
+                <div class="mb-3 text-dark">
+                  If already have account
+                  <a
+                    class="text-decoration-none text-primary fw-semibold"
+                    routerLink="/login"
+                  >
+                    Login Here!</a
+                  >
+                </div>
+              </form>
             </div>
-            <div class="mb-3">
-              <input
-                class="form-control rounded-2 text-dark py-3"
-                formControlName="phone"
-                id="phone"
-                placeholder="Phone Number"
-                aria-describedby="phone"
-                [ngClass]="[
-                  !registerFormGroup.controls['phone'].valid &&
-                  (registerFormGroup.controls['phone'].dirty ||
-                    registerFormGroup.controls['phone'].touched)
-                    ? 'border-danger'
-                    : registerFormGroup.controls['phone'].valid
-                    ? 'border-primary'
-                    : ''
-                ]"
-                required
-              />
-            </div>
-            <div class="mb-3 d-flex position-relative">
-              <input
-                [type]="show ? 'text' : 'password'"
-                class="form-control rounded-2 text-dark py-3"
-                formControlName="userPassword"
-                id="password"
-                placeholder="Password"
-                aria-describedby="password"
-                [ngClass]="[
-                  !registerFormGroup.controls['userPassword'].valid &&
-                  (registerFormGroup.controls['userPassword'].dirty ||
-                    registerFormGroup.controls['userPassword'].touched)
-                    ? 'border-danger'
-                    : registerFormGroup.controls['userPassword'].valid
-                    ? 'border-primary'
-                    : ''
-                ]"
-                required
-              />
-              <span
-                class="show-password small position-absolute text-primary fw-semibold"
-                (mouseenter)="showPassword()"
-                (mouseleave)="showPassword()"
-                >show</span
-              >
-            </div>
-            <div class="mb-3">
-              <input
-                type="password"
-                class="form-control rounded-2 text-dark py-3"
-                formControlName="confirmPassword"
-                id="confirmPassword"
-                placeholder="Confirm Password"
-                aria-describedby="Confirm Password"
-                [ngClass]="[
-                  !registerFormGroup.controls['confirmPassword'].valid &&
-                  (registerFormGroup.controls['confirmPassword'].dirty ||
-                    registerFormGroup.controls['confirmPassword'].touched)
-                    ? 'border-danger'
-                    : registerFormGroup.controls['confirmPassword'].valid
-                    ? 'border-primary'
-                    : ''
-                ]"
-                required
-              />
-              <span *ngIf="!passwordMatch" class="small text-danger"
-                >Password doesn't match!</span
-              >
-            </div>
-            <button
-              type="submit"
-              class="btn btn-primary text-white w-100 rounded-pill mb-3"
-            >
-              Register
-            </button>
-            <div class="mb-3 text-dark">
-              If already have account
-              <a
-                class="text-decoration-none text-primary fw-semibold"
-                routerLink="/login"
-              >
-                Login Here!</a
-              >
-            </div>
-          </form>
+          </div>
         </div>
       </div>
     </div>
+
   </div>
 </section>

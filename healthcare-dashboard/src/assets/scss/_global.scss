@@ -1,11 +1,8 @@
 //=================================================//
 //=================global scss=====================//
 //=================================================//
-body {
-  background-color: $light !important;
-}
+
 .header-container {
-  background-color: rgb(240, 240, 240);
   font-size: 30px;
   color: black;
   border: 2px solid rgb(196, 196, 196);
@@ -36,7 +33,7 @@ body {
   padding-block: 18px !important;
 }
 .py-12 {
-  padding-block: 18px !important;
+  padding-block: 12px !important;
 }
 .show-password {
   right: 12px;

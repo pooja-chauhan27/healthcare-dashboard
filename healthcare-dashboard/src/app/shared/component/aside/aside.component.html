@@ -6,7 +6,7 @@
   <div class="aside-wrapper">
     <div class="py-4 mb-2">
       <!-- logo -->
-      <a routerLink="/dashboard">
+      <a routerLink="dashboard">
         <img
           src="/assets/images/png/logo-image.png"
           class="health-logo"
@@ -22,7 +22,7 @@
       <!-- /logo -->
     </div>
     <div class="p-4 pb-1 subtitle-medicine">
-      <p class="body-regular-font text-uppercase">Medicine</p>
+      <div class="body-regular-font text-uppercase mb-3">Medicine</div>
     </div>
     <ul *ngIf="userDashboard" class="aside-list list-unstyled h-100">
       <!-- li -->
@@ -91,8 +91,6 @@
         <div class="aside-item px-4">
           <a
             class="text-decoration-none text-secondary subtitle-md text-dark d-flex align-items-center"
-            routerLink="doctors"
-            routerLinkActive="active"
           >
             <span
               ><svg
@@ -118,8 +116,6 @@
         <div class="aside-item px-4">
           <a
             class="text-decoration-none text-secondary subtitle-md text-dark d-flex align-items-center"
-            routerLink="departments"
-            routerLinkActive="active"
           >
             <span class=""
               ><svg
@@ -172,8 +168,6 @@
         <div class="aside-item px-4">
           <a
             class="text-decoration-none text-secondary subtitle-md text-dark d-flex align-items-center"
-            routerLink="payments"
-            routerLinkActive="active"
           >
             <span
               ><svg
@@ -199,8 +193,6 @@
         <div class="aside-item px-4">
           <a
             class="text-decoration-none text-secondary subtitle-md text-dark d-flex align-items-center"
-            routerLink="help"
-            routerLinkActive="active"
           >
             <span
               ><svg
@@ -310,8 +302,6 @@
         <div class="aside-item px-4">
           <a
             class="text-decoration-none text-secondary subtitle-md text-dark d-flex align-items-center"
-            routerLink="help"
-            routerLinkActive="active"
           >
             <span
               ><svg

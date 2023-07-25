@@ -30,7 +30,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              // "https://fonts.googleapis.com/css2?family=Lato&display=swap"
             ],
             "scripts": [
             ]

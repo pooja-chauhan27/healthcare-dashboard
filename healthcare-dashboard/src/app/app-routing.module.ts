@@ -4,6 +4,7 @@ import { DefaultLayoutComponent } from './shared/layout/default-layout/default-l
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
+  
   // {
   //   path: 'user',
   //   pathMatch: 'full',

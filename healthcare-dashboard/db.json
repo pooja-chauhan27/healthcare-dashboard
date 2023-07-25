@@ -267,6 +267,22 @@
       "phone": "(123) 456-7894",
       "confirmPassword": "admin",
       "id": 17
+    },
+    {
+      "name": "pooja chauhan",
+      "userEmail": "pooja@gmail.com",
+      "userPassword": "1234",
+      "phone": "(123) 456-7894",
+      "confirmPassword": "1234",
+      "id": 18
+    },
+    {
+      "name": "gdfg",
+      "userEmail": "pooja@gmail.com",
+      "userPassword": "111",
+      "phone": "12345",
+      "confirmPassword": "111",
+      "id": 19
     }
   ]
 }

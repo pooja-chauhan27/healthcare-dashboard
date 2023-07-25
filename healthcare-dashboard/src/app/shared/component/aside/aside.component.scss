@@ -19,7 +19,10 @@
     .aside-item {
       overflow-y: auto;
       overflow-x: hidden;
-      cursor: pointer;
+      
+      a{
+        cursor: pointer;
+      }
       .aside-link {
         padding-left: 12px;
         display: inline;
