@@ -11,6 +11,10 @@ export class CommonService {
   public userUrl = 'http://localhost:3000/user';
   public appointmentUrl = 'http://localhost:3000/appointments';
   public isCollapsed = true;
+  public adminDashboard: boolean = false;
+  public userDashboard: boolean = true;
+  // authentication guard
+  public authentication: boolean = false;
 
   constructor(private http: HttpClient) {}
 
@@ -43,11 +47,8 @@ export class CommonService {
   // }
 
   // login
-  login(data: any) {
-    return this.http.post(
-      `http://localhost:3000/registrations?userEmail=${data.userEmail}&&userPassword=${data.userPassword}`,
-      data
-    );
+  login() {
+    return this.http.get<any>(`http://localhost:3000/registrations`);
   }
 
   // register user

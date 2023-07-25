@@ -7,11 +7,12 @@ import { CommonService } from '../../services/common.service';
   styleUrls: ['./aside.component.scss'],
 })
 export class AsideComponent {
+  public adminDashboard: boolean = false;
+  public userDashboard: boolean = true;
   isCollapsed: boolean = this.commonService.isCollapsed;
   constructor(private commonService: CommonService) {}
 
   ngDoCheck(): void {
     this.isCollapsed = this.commonService.isCollapsed;
   }
-
 }

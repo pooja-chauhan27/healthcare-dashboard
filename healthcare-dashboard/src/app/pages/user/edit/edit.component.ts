@@ -3,6 +3,7 @@ import { FormControl, FormGroup } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 import { CommonService } from 'src/app/shared/services/common.service';
 import { Router } from '@angular/router';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-edit',
@@ -52,18 +53,27 @@ export class EditComponent {
       .subscribe((result) => {
         console.log(result);
       });
-
-    setTimeout(() => {
-      alert('You have successfully updated!');
-      this.router.navigate(['', '/']);
-    }, 1000);
+    Swal.fire({
+      title: 'You have successfully updated!',
+      icon: 'success',
+      confirmButtonColor: '#3085d6',
+    }).then((result) => {
+      if (result.isConfirmed) {
+        this.router.navigate(['', 'dashboard']);
+      }
+    });
   }
   // cancel function
   cancel() {
-    setTimeout(() => {
-      alert('You have canceled!');
-      this.router.navigate(['', '/']);
-    }, 1000);
+    Swal.fire({
+      title: 'You have Cancelled!',
+      icon: 'error',
+      confirmButtonColor: '#3085d6',
+    }).then((result) => {
+      if (result.isConfirmed) {
+        this.router.navigate(['', 'dashboard']);
+      }
+    });
   }
 
   // show password function

@@ -12,21 +12,41 @@
             <div class="mb-3">
               <input
                 type="email"
-                class="form-control rounded-2 text-dark border-dark py-3"
+                class="form-control rounded-2 text-dark py-3"
                 formControlName="userEmail"
                 id="userEmail"
                 placeholder="Email address"
                 aria-describedby="emailHelp"
+                [ngClass]="[
+                  !loginFormGroup.controls['userEmail'].valid &&
+                  (loginFormGroup.controls['userEmail'].dirty ||
+                    loginFormGroup.controls['userEmail'].touched)
+                    ? 'border-danger'
+                    : loginFormGroup.controls['userEmail'].valid
+                    ? 'border-primary'
+                    : ''
+                ]"
+                required
               />
             </div>
             <div class="mb-3 d-flex position-relative">
               <input
                 [type]="show ? 'text' : 'password'"
-                class="form-control rounded-2 text-dark border-dark py-3"
+                class="form-control rounded-2 text-dark py-3"
                 formControlName="userPassword"
                 id="userPassword"
                 placeholder="Password"
                 aria-describedby="password"
+                [ngClass]="[
+                  !loginFormGroup.controls['userPassword'].valid &&
+                  (loginFormGroup.controls['userPassword'].dirty ||
+                    loginFormGroup.controls['userPassword'].touched)
+                    ? 'border-danger'
+                    : loginFormGroup.controls['userPassword'].valid
+                    ? 'border-primary'
+                    : ''
+                ]"
+                required
               />
               <span
                 class="show-password small position-absolute text-primary fw-semibold"
@@ -35,26 +55,26 @@
                 >show</span
               >
             </div>
-            <div class="mb-3 fw-bold text-primary">
+            <div class="mb-3 fw-semibold text-primary">
               <a class="text-decoration-none" routerLink="/forgot-password"
                 >Forgot Password?</a
               >
             </div>
-            <!-- <div class="mb-3">
-                <input
-                  class="form-control rounded-2 text-dark border-dark py-3"
-                  formControlName="phone"
-                  id="phone"
-                  placeholder="Phone Number"
-                  aria-describedby="phone"
-                />
-              </div> -->
             <button
               type="submit"
-              class="btn btn-primary text-white w-100 rounded-pill"
+              class="btn btn-primary text-white w-100 rounded-pill mb-3"
             >
               Login
             </button>
+            <div class="mb-3 text-dark">
+              Don't have account?
+              <a
+                class="text-decoration-none text-primary fw-semibold"
+                routerLink="/register"
+              >
+                Register Here!</a
+              >
+            </div>
           </form>
         </div>
       </div>

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { CommonService } from 'src/app/shared/services/common.service';
 import { Router } from '@angular/router';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-register',
@@ -17,7 +18,7 @@ export class RegisterComponent {
   ngOnInit() {
     this.registerFormGroup = new FormGroup({
       name: new FormControl('', [Validators.required]),
-      userEmail: new FormControl('', [Validators.required]),
+      userEmail: new FormControl('', [Validators.required, Validators.email]),
       userPassword: new FormControl('', [Validators.required]),
       phone: new FormControl('', [Validators.required]),
       confirmPassword: new FormControl('', [Validators.required]),
@@ -36,12 +37,17 @@ export class RegisterComponent {
         this.passwordMatch = true;
         // register user
         this.commonService.registerUser(formValue).subscribe((result) => {
-          console.log(result);
-          alert('You have successfully registered!');
-          setTimeout(() => {
-            this.registerFormGroup.reset();
-            console.log(this.router.navigate(['/login']));
-          }, 1000);
+          Swal.fire({
+            title: 'You have successfully registered!',
+            icon: 'success',
+            confirmButtonColor: '#3085d6',
+          }).then((result) => {
+            if (result.isConfirmed) {
+              console.log(result);
+              this.registerFormGroup.reset();
+              this.router.navigate(['', 'login']);
+            }
+          });
         });
       } else {
         this.passwordMatch = false;
