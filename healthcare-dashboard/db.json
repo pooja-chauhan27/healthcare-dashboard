@@ -166,91 +166,119 @@
   "registrations": [
     {
       "id": 1,
-      "firstName": "john",
-      "lastName": "Mark",
+      "name": "john",
       "userEmail": "john@email.com",
       "userPassword": "john",
       "phone": "987654321"
     },
     {
-      "firstName": "pooja",
-      "lastName": "chauhan",
+      "name": "pooja",
       "userEmail": "poojagmail.com",
       "userPassword": "pooja",
       "id": 2,
       "phone": "987654321"
     },
     {
-      "firstName": "pooja",
-      "lastName": "chauhan",
+      "name": "pooja",
       "userEmail": "pooja123@gmail.com",
       "userPassword": "pooja123",
       "phone": "987654321",
       "id": 3
     },
     {
-      "firstName": "kanchan",
-      "lastName": "kaur",
+      "name": "kanchan",
       "userEmail": "kanchan@gmail.com",
       "userPassword": "kanchan",
       "phone": "987654321",
       "id": 4
     },
     {
-      "firstName": "mahi",
-      "lastName": "salaria",
+      "name": "mahi",
       "userEmail": "mahi@gmail.com",
       "userPassword": "mahi",
       "phone": "987654321",
       "id": 5
     },
     {
-      "firstName": "john",
-      "lastName": "smith",
+      "name": "john",
       "userEmail": "john@gmail.com",
       "userPassword": "john",
       "phone": "987654321",
       "id": 6
     },
     {
-      "firstName": "Raj",
-      "lastName": "Kumar",
+      "name": "Raj",
       "userEmail": "raj@gmail.com",
       "userPassword": "raj",
       "phone": "987654321",
       "id": 7
     },
     {
-      "firstName": "kanchan",
-      "lastName": "deep",
+      "name": "kanchan",
       "userEmail": "kanchandeep@gmail.com",
       "userPassword": "kanchandeep",
       "phone": "987654321",
       "id": 8
     },
     {
-      "firstName": "param",
-      "lastName": "jeet",
+      "name": "param",
       "userEmail": "param@gmail.com",
       "userPassword": "param",
       "phone": "987654321",
       "id": 9
     },
     {
-      "firstName": "john",
-      "lastName": "smith",
+      "name": "john",
       "userEmail": "john@user",
       "userPassword": "john",
       "phone": "987654321",
       "id": 10
     },
     {
-      "firstName": "pooja",
-      "lastName": "chauhan",
+      "name": "pooja",
       "userEmail": "rahul@gmail.com",
       "userPassword": "35235",
       "phone": "987654321",
       "id": 11
+    },
+    {
+      "name": "Vinay",
+      "userEmail": "vinay@gmail.com",
+      "userPassword": "1234",
+      "phone": "(123) 456-7894",
+      "id": 12
+    },
+    {
+      "name": "dfsd",
+      "userEmail": "rahul@gmail.com",
+      "userPassword": "1234",
+      "phone": "(123) 456-7894",
+      "confirmPassword": "123",
+      "id": 13
+    },
+    {
+      "name": "rama",
+      "userEmail": "rama@user.com",
+      "userPassword": "rama",
+      "phone": "(123) 456-7894",
+      "confirmPassword": "rama",
+      "id": 14
+    },
+    {
+      "name": "pooja",
+      "userEmail": "harry@gmail.com",
+      "userPassword": "harry",
+      "phone": "(123) 456-7894",
+      "confirmPassword": "harry",
+      "id": 15
+    },
+    {
+      "name": "dfhdfh",
+      "userEmail": "rahul@gmail.com",
+      "userPassword": "1234",
+      "phone": "sdas",
+      "confirmPassword": "1234",
+      "id": 16
     }
   ]
 }
