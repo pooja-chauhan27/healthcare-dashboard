@@ -36,7 +36,6 @@ export class LoginComponent {
         );
       });
       if (user) {
-        debugger;
         if (
           user.userEmail === this.adminEmail &&
           user.userPassword === this.adminPassword
