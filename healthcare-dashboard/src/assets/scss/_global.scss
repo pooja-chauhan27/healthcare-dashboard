@@ -2,14 +2,8 @@
 //=================global scss=====================//
 //=================================================//
 
-.header-container {
-  font-size: 30px;
-  color: black;
-  border: 2px solid rgb(196, 196, 196);
-  padding: 20px;
-}
 .form-control:focus {
-  border-color: $gray-300 !important;
+  // border-color: $gray-300 !important;
   outline: 0;
   box-shadow: none !important;
 }
@@ -41,5 +35,22 @@
   &:hover {
     cursor: pointer;
     color: $primary-hover;
+  }
+}
+.action-icon:hover {
+  svg {
+    cursor: pointer;
+  }
+  svg {
+    path {
+      fill: $primary-hover;
+    }
+  }
+}
+table {
+  th {
+    .subtitle-md {
+      white-space: nowrap;
+    }
   }
 }

@@ -6,9 +6,17 @@
   width: 250px;
 
   .aside-wrapper {
+    .aside-list {
+      overflow-y: auto;
+      height: calc(100% - 147px);
+      li {
+        .aside-item {
+          padding-block: 14px;
+        }
+      }
+    }
     .health-logo {
       display: block;
-      padding-inline: 24px;
     }
     .logo-icon {
       display: none;
@@ -17,10 +25,7 @@
       display: block;
     }
     .aside-item {
-      overflow-y: auto;
-      overflow-x: hidden;
-      
-      a{
+      a {
         cursor: pointer;
       }
       .aside-link {
@@ -29,21 +34,17 @@
       }
     }
   }
-
-  li {
-    .aside-item {
-      padding: 14px 0px;
-    }
-  }
 }
 
 @media screen and (max-width: 992px) {
   .aside:not(.open-aside) {
     width: 68px;
     .aside-wrapper {
+      .aside-list {
+        height: calc(100% - 85px);
+      }
       .health-logo {
         display: none;
-        padding-inline: 24px;
       }
       .logo-icon {
         display: block;
@@ -64,7 +65,6 @@
     .aside-wrapper {
       .health-logo {
         display: block !important;
-        padding-inline: 24px;
       }
       .logo-icon {
         display: none !important;

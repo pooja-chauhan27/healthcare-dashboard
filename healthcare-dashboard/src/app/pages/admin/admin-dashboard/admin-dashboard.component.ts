@@ -8,7 +8,7 @@ import { CommonService } from 'src/app/shared/services/common.service';
   styleUrls: ['./admin-dashboard.component.scss'],
 })
 export class AdminDashboardComponent {
-  registerUser: any[] = [];
+  public registerUser: any[] = [];
   constructor(private commonService: CommonService, private router: Router) {}
 
   ngOnInit() {

@@ -12,16 +12,17 @@ import Swal from 'sweetalert2';
 })
 export class EditComponent {
   public show: boolean = false;
-  user: any = [];
-  editFormGroup = new FormGroup({
-    image: new FormControl(''),
-    name: new FormControl(''),
-    email: new FormControl(''),
-    date: new FormControl(''),
-    visitTime: new FormControl(''),
-    doctor: new FormControl(''),
-    conditions: new FormControl(''),
+  public user: any = [];
+  public editFormGroup = new FormGroup({
+    image: new FormControl(this.user.image),
+    name: new FormControl(this.user.name),
+    email: new FormControl(this.user.email),
+    date: new FormControl(this.user.date),
+    visitTime: new FormControl(this.user.visitTime),
+    doctor: new FormControl(this.user.doctor),
+    conditions: new FormControl(this.user.conditions),
   });
+
   constructor(
     private route: ActivatedRoute,
     private commonService: CommonService,
@@ -43,6 +44,7 @@ export class EditComponent {
       });
     });
   }
+
   // update function
   update() {
     this.commonService
@@ -63,6 +65,7 @@ export class EditComponent {
       }
     });
   }
+
   // cancel function
   cancel() {
     Swal.fire({

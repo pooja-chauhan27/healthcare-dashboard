@@ -200,7 +200,7 @@
                       <div>{{ item.email }}</div>
                     </td>
                     <td class="text-dark">
-                      <div>{{ item.date }}</div>
+                      <div>{{ item.date | date : "dd-MMM-yyyy" }}</div>
                     </td>
                     <td class="text-dark">
                       <div>{{ item.visitTime }}</div>

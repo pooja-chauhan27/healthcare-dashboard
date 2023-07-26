@@ -7,11 +7,12 @@ import { CommonService } from '../../services/common.service';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-  isCollapsed: boolean = this.commonService.isCollapsed;
+  public isCollapsed: boolean = this.commonService.isCollapsed;
+
   constructor(private commonService: CommonService) {}
 
   // aside navbar toggle
-  closeMenu() {
+  public closeMenu() {
     this.isCollapsed = !this.isCollapsed;
     this.commonService.isCollapsed = this.isCollapsed;
   }

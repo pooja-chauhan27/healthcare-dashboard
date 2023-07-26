@@ -8,68 +8,182 @@
             <div class="card-header border-0 bg-white p-4 pb-0">
               <h4 class="text-dark fw-bold">Edit Form</h4>
             </div>
-    
+
             <div class="card-body p-4 bg-white">
               <form [formGroup]="editFormGroup" (ngSubmit)="update()">
-                <div class="mb-3">
+                <div class="mb-4">
                   <input
                     type="text"
-                    class="form-control rounded-2 text-dark border-dark py-3"
+                    class="form-control rounded-2 text-dark py-3"
                     formControlName="name"
                     id="name"
                     placeholder="Name"
                     aria-describedby="name"
+                    [ngClass]="[
+                      !editFormGroup.controls['name'].valid &&
+                      (editFormGroup.controls['name'].dirty ||
+                        editFormGroup.controls['name'].touched)
+                        ? 'border-danger'
+                        : 'border-primary'
+                    ]"
+                    required
                   />
+                  <small
+                    class="text-danger position-absolute"
+                    [ngClass]="[
+                      !editFormGroup.controls['name'].valid &&
+                      (editFormGroup.controls['name'].dirty ||
+                        editFormGroup.controls['name'].touched)
+                        ? 'visible'
+                        : 'invisible'
+                    ]"
+                    >Please enter valid name</small
+                  >
                 </div>
-                <div class="mb-3">
+                <div class="mb-4">
                   <input
                     type="email"
-                    class="form-control rounded-2 text-dark border-dark py-3"
+                    class="form-control rounded-2 text-dark py-3"
                     formControlName="email"
                     id="email"
                     placeholder="Email address"
                     aria-describedby="email"
+                    [ngClass]="[
+                      !editFormGroup.controls['email'].valid &&
+                      (editFormGroup.controls['email'].dirty ||
+                        editFormGroup.controls['email'].touched)
+                        ? 'border-danger'
+                        : 'border-primary'
+                    ]"
+                    required
                   />
+                  <small
+                    class="text-danger position-absolute"
+                    [ngClass]="[
+                      !editFormGroup.controls['email'].valid &&
+                      (editFormGroup.controls['email'].dirty ||
+                        editFormGroup.controls['email'].touched)
+                        ? 'visible'
+                        : 'invisible'
+                    ]"
+                    >Please enter valid email</small
+                  >
                 </div>
-                <div class="mb-3">
+                <div class="mb-4">
                   <input
-                    type="text"
-                    class="form-control rounded-2 text-dark border-dark py-3"
+                    type="date"
+                    class="form-control rounded-2 text-dark py-3"
                     formControlName="date"
                     id="date"
                     placeholder="Date"
                     aria-describedby="date"
+                    [ngClass]="[
+                      !editFormGroup.controls['date'].valid &&
+                      (editFormGroup.controls['date'].dirty ||
+                        editFormGroup.controls['date'].touched)
+                        ? 'border-danger'
+                        : 'border-primary'
+                    ]"
+                    required
                   />
+                  <small
+                    class="text-danger position-absolute"
+                    [ngClass]="[
+                      !editFormGroup.controls['date'].valid &&
+                      (editFormGroup.controls['date'].dirty ||
+                        editFormGroup.controls['date'].touched)
+                        ? 'visible'
+                        : 'invisible'
+                    ]"
+                    >Please enter valid date</small
+                  >
                 </div>
-                <div class="mb-3">
+                <div class="mb-4">
                   <input
                     type="text"
-                    class="form-control rounded-2 text-dark border-dark py-3"
+                    class="form-control rounded-2 text-dark py-3"
                     formControlName="visitTime"
                     id="visitTime"
                     placeholder="Visit Time"
                     aria-describedby="visitTime"
+                    [ngClass]="[
+                      !editFormGroup.controls['visitTime'].valid &&
+                      (editFormGroup.controls['visitTime'].dirty ||
+                        editFormGroup.controls['visitTime'].touched)
+                        ? 'border-danger'
+                        : 'border-primary'
+                    ]"
+                    required
                   />
+                  <small
+                    class="text-danger position-absolute"
+                    [ngClass]="[
+                      !editFormGroup.controls['visitTime'].valid &&
+                      (editFormGroup.controls['visitTime'].dirty ||
+                        editFormGroup.controls['visitTime'].touched)
+                        ? 'visible'
+                        : 'invisible'
+                    ]"
+                    >Please enter valid time</small
+                  >
                 </div>
-                <div class="mb-3">
+                <div class="mb-4">
                   <input
                     type="text"
-                    class="form-control rounded-2 text-dark border-dark py-3"
+                    class="form-control rounded-2 text-dark py-3"
                     formControlName="doctor"
                     id="doctor"
                     placeholder="Doctor"
                     aria-describedby="doctor"
+                    [ngClass]="[
+                      !editFormGroup.controls['doctor'].valid &&
+                      (editFormGroup.controls['doctor'].dirty ||
+                        editFormGroup.controls['doctor'].touched)
+                        ? 'border-danger'
+                        : 'border-primary'
+                    ]"
+                    required
                   />
+                  <small
+                    class="text-danger position-absolute"
+                    [ngClass]="[
+                      !editFormGroup.controls['doctor'].valid &&
+                      (editFormGroup.controls['doctor'].dirty ||
+                        editFormGroup.controls['doctor'].touched)
+                        ? 'visible'
+                        : 'invisible'
+                    ]"
+                    >Please enter valid doctor</small
+                  >
                 </div>
-                <div class="mb-3">
+                <div class="mb-4">
                   <input
                     type="text"
-                    class="form-control rounded-2 text-dark border-dark py-3"
+                    class="form-control rounded-2 text-dark py-3"
                     formControlName="conditions"
                     id="condition"
                     placeholder="Conditions"
                     aria-describedby="condition"
+                    [ngClass]="[
+                      !editFormGroup.controls['conditions'].valid &&
+                      (editFormGroup.controls['conditions'].dirty ||
+                        editFormGroup.controls['conditions'].touched)
+                        ? 'border-danger'
+                        : 'border-primary'
+                    ]"
+                    required
                   />
+                  <small
+                    class="text-danger position-absolute"
+                    [ngClass]="[
+                      !editFormGroup.controls['conditions'].valid &&
+                      (editFormGroup.controls['conditions'].dirty ||
+                        editFormGroup.controls['conditions'].touched)
+                        ? 'visible'
+                        : 'invisible'
+                    ]"
+                    >Please enter valid conditions</small
+                  >
                 </div>
                 <div class="row">
                   <div class="col-6">
@@ -83,6 +197,7 @@
                   </div>
                   <div class="col-6">
                     <button
+                      [disabled]="editFormGroup.invalid"
                       type="submit"
                       class="btn btn-primary text-white w-100 rounded-pill"
                     >
@@ -96,7 +211,6 @@
         </div>
       </div>
     </div>
-
   </div>
 </section>
 <!-- /edit form -->

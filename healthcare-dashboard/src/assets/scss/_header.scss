@@ -2,12 +2,10 @@
 //=================header scss=====================//
 //=================================================//
 
-.navbar svg:hover path {
-  fill: $primary-hover;
-}
-
-@media screen and (min-width: 992px) {
-  .form-control {
-    width: 300px;
+.navbar {
+  svg:hover {
+    path {
+      fill: $primary-hover;
+    }
   }
 }

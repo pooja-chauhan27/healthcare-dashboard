@@ -4,14 +4,12 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { AppointmentComponent } from './appointment/appointment.component';
 import { EditComponent } from './edit/edit.component';
 import { PatientsComponent } from './patients/patients.component';
-import { authGuard } from 'src/app/shared/auth-guard/auth.guard';
 
 const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
     component: DashboardComponent,
-    canActivate: [authGuard],
   },
   {
     path: 'dashboard',

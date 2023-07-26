@@ -5,7 +5,9 @@ import { CommonService } from '../services/common.service';
 export const authGuard: CanActivateFn = (route, state) => {
   let router = inject(Router);
   let isLoggedIn = localStorage.getItem('isLoggedIn');
-  if ( isLoggedIn == 'false') {
+
+  // if user is not logged in
+  if (isLoggedIn == 'false') {
     router.navigate(['login']);
     return false;
   }

@@ -5,25 +5,25 @@ header {
   .navbar {
     left: 69px !important;
     transition: left 0.35s ease-in;
-  }
-  @media screen and (min-width: 992px) {
-    .navbar {
+    @media screen and (min-width: 992px) {
       left: 250px !important;
       transition: left 0.35s ease-in;
     }
-    .form-control {
-      width: 300px;
+    .search-bar {
+      .input-group {
+        height: 40px;
+        width: 300px;
+      }
     }
-  }
-  .search-bar .input-group {
-    height: 40px;
-  }
-  .openAside {
-    margin-left: 145px;
-    transition: margin-left 0.35s ease-in;
-  }
-  .closeAside {
-    margin-left: 0px;
-    transition: margin-left 0.35s ease-in;
+    .navbar-toggler {
+      &.openAside {
+        margin-left: 145px;
+        transition: margin-left 0.35s ease-in;
+      }
+      &.closeAside {
+        margin-left: 0px;
+        transition: margin-left 0.35s ease-in;
+      }
+    }
   }
 }

@@ -7,8 +7,9 @@ const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
 
   // {
-  //   path: 'user',
+  //   path: '',
   //   pathMatch: 'full',
+  //   canActivate: [authGuard],
   //   component: DefaultLayoutComponent,
   //   children: [
   //     {

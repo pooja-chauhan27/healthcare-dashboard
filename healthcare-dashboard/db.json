@@ -53,42 +53,12 @@
   ],
   "appointments": [
     {
-      "id": 3,
-      "image": "user-img3.png",
-      "name": "Jane Cooper",
-      "email": "jane.cooper@example.com",
-      "date": "17/12/2020",
-      "visitTime": "09:15-09:45am",
-      "doctor": "Dr. Jacob Jones",
-      "conditions": "Depression"
-    },
-    {
-      "id": 4,
-      "image": "user-img4.png",
-      "name": "Robert Fox",
-      "email": "robert.fox@gmail.com",
-      "date": "18/10/2020",
-      "visitTime": "04:15-09:45am",
-      "doctor": "Dr. Arlene McCoy",
-      "conditions": "Arthritis"
-    },
-    {
-      "id": 5,
-      "image": "user-img4.png",
-      "name": "Jenny Wilson",
-      "email": "jenny.wilson@example.com",
-      "date": "20/10/2020",
-      "visitTime": "06:15-09:45am",
-      "doctor": "Dr. Esther Howard",
-      "conditions": "Fracture"
-    },
-    {
       "id": 6,
       "image": "user-img3.png",
       "name": "Jane Cooper",
       "email": "jane.cooper@example.com",
-      "date": "17/12/2020",
-      "visitTime": "09:15-09:45am",
+      "date": "2023-07-05",
+      "visitTime": "09:45am",
       "doctor": "Dr. Jacob Jones",
       "conditions": "Depression"
     },
@@ -97,8 +67,8 @@
       "image": "user-img2.png",
       "name": "Ronald Richards",
       "email": "ronald.richards@example.com",
-      "date": "02/10/2020",
-      "visitTime": "05:15-09:45am",
+      "date": "2023-07-05",
+      "visitTime": "09:45am",
       "doctor": "Dr. Theresa Webb",
       "conditions": "Mumps Stage II"
     },
@@ -107,8 +77,8 @@
       "image": "user-img1.png",
       "name": "Leslie Alexander",
       "email": "lesie.alexander@example.com",
-      "date": "04/10/20200",
-      "visitTime": "10:15-09:45am",
+      "date": "2023-07-05",
+      "visitTime": "09:45am",
       "doctor": "Dr. Jacob Jones",
       "conditions": "Depression"
     },
@@ -117,8 +87,8 @@
       "image": "user-img1.png",
       "name": "Leslie Alexander",
       "email": "lesie.alexander@example.com",
-      "date": "04/10/20200",
-      "visitTime": "10:15-09:45am",
+      "date": "2023-07-05",
+      "visitTime": "09:45am",
       "doctor": "Dr. Jacob Jones",
       "conditions": "Depression"
     },
@@ -127,8 +97,8 @@
       "image": "user-img1.png",
       "name": "Leslie Alexander",
       "email": "lesie.alexander@example.com",
-      "date": "04/10/20200",
-      "visitTime": "10:15-09:45am",
+      "date": "2023-07-05",
+      "visitTime": "09:45am",
       "doctor": "Dr. Jacob Jones",
       "conditions": "Depression"
     },
@@ -137,8 +107,8 @@
       "image": "user-img1.png",
       "name": "Leslie Alexander",
       "email": "lesie.alexander@example.com",
-      "date": "04/10/20200",
-      "visitTime": "10:15-09:45am",
+      "date": "2023-07-05",
+      "visitTime": "09:45am",
       "doctor": "Dr. Jacob Jones",
       "conditions": "Depression"
     }
@@ -291,6 +261,38 @@
       "phone": "8284869847",
       "confirmPassword": "pooja",
       "id": 20
+    },
+    {
+      "name": "Villar-Webflow",
+      "userEmail": "rahul@gmail.com",
+      "userPassword": "1234",
+      "phone": "(123) 456-7894",
+      "confirmPassword": "1234",
+      "id": 21
+    },
+    {
+      "name": "pooja",
+      "userEmail": "pooj123a@gmail.com",
+      "userPassword": "123",
+      "phone": "12345",
+      "confirmPassword": "123",
+      "id": 22
+    },
+    {
+      "name": "pooja",
+      "userEmail": "harry@gmail.com",
+      "userPassword": "harry",
+      "phone": "(123) 456-7894",
+      "confirmPassword": "harry",
+      "id": 23
+    },
+    {
+      "name": "Mukesh",
+      "userEmail": "rahul@gmail.com",
+      "userPassword": "1234",
+      "phone": "@gmail.com",
+      "confirmPassword": "1234",
+      "id": 24
     }
   ]
 }

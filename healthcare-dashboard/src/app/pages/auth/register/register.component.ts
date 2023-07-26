@@ -10,11 +10,18 @@ import Swal from 'sweetalert2';
   styleUrls: ['./register.component.scss'],
 })
 export class RegisterComponent {
-  formObj: any;
   public show = false;
   public passwordMatch: boolean = true;
-  registerFormGroup!: FormGroup;
+  public registerFormGroup = new FormGroup({
+    name: new FormControl('', [Validators.required]),
+    userEmail: new FormControl('', [Validators.required, Validators.email]),
+    userPassword: new FormControl('', [Validators.required]),
+    phone: new FormControl('', [Validators.required]),
+    confirmPassword: new FormControl('', [Validators.required]),
+  });
+
   constructor(private commonService: CommonService, private router: Router) {}
+
   ngOnInit() {
     this.registerFormGroup = new FormGroup({
       name: new FormControl('', [Validators.required]),
@@ -29,7 +36,7 @@ export class RegisterComponent {
   register() {
     let formValue = this.registerFormGroup.value;
     if (this.registerFormGroup.valid) {
-      //if password matches to confirm password field
+      //if password matches to confirm password
       if (
         this.registerFormGroup.value.userPassword ===
         this.registerFormGroup.value.confirmPassword

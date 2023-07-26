@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
 import { CommonService } from 'src/app/shared/services/common.service';
 import Swal from 'sweetalert2';
 
@@ -9,9 +8,11 @@ import Swal from 'sweetalert2';
   styleUrls: ['./dashboard.component.scss'],
 })
 export class DashboardComponent {
-  constructor(private commonService: CommonService, private router: Router) {}
+  public appointments: any[] = [];
 
-  appointments: any[] = [];
+  constructor(private commonService: CommonService) {}
+
+
   ngOnInit(): void {
     // get request
     this.commonService.getAppointment().subscribe((response: any[]) => {
@@ -20,7 +21,7 @@ export class DashboardComponent {
   }
 
   // delete appointment
-  delete(id: any, i: any) {
+  public delete(id: any, i: any) {
     Swal.fire({
       title: 'Are you sure?',
       text: "You won't be able to revert this!",
