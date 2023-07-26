@@ -19,17 +19,19 @@ $theme-color: (
 // body styles
 $font-size-base: 0.875rem; //14px
 $body-font-size: 0.875rem; //14px
+// $font-size-base: 1rem; //14px
+// $body-font-size: 1rem; //14px
 $font-family-base: "Lato", sans-serif;
 $body-font-weight: 400;
 $body-color: $secondary;
 $body-bg: $light;
 
-$h1-font-size: 3.5rem; //56px
-$h2-font-size: 2.5rem; //46px
-$h3-font-size: 1.75rem; //28px
-$h4-font-size: 1.625rem; //24px
-$h5-font-size: 1.25rem; //20px
-$h6-font-size: 1.125rem; //18px
+$h1-font-size: $fs-56; //56px
+$h2-font-size: $fs-46; //46px
+$h3-font-size: $fs-28; //28px
+$h4-font-size: $fs-24; //24px
+$h5-font-size: $fs-20; //20px
+$h6-font-size: $fs-18; //18px
 
 $small-font-size: 0.929rem; //13px
 
@@ -42,12 +44,13 @@ $table-cell-vertical-align: middle;
 $input-placeholder-color: $gray-900;
 $input-border-color: $gray-900;
 $input-focus-border-color: $gray-400;
-$input-btn-padding-y : 0.75rem;
-$input-btn-padding-x : 0.75rem;
+$input-btn-padding-y: 0.75rem;
+$input-btn-padding-x: 0.75rem;
 
 //== button
 $btn-focus-box-shadow: none;
 $btn-active-box-shadow: none;
+$btn-font-size: $fs-16;
 $navbar-toggler-focus-width: 0;
 
 //box shadow-sm
@@ -55,42 +58,42 @@ $box-shadow-sm: 4px 0px 16px 0px rgba(16, 30, 115, 0.08);
 
 h1,
 .h1 {
-  font-weight: $font-weight-700;
+  font-weight: $font-weight-700 !important;
   line-height: $lh-60;
   letter-spacing: $letter-spacing-lg;
 }
 
 h2,
 .h2 {
-  font-weight: $font-weight-700;
+  font-weight: $font-weight-700 !important;
   line-height: $lh-46;
   letter-spacing: $letter-spacing-md;
 }
 
 h3,
 .h3 {
-  font-weight: $font-weight-400;
+  font-weight: $font-weight-400 !important;
   line-height: $lh-34;
   letter-spacing: $letter-spacing-md;
 }
 
 h4,
 .h4 {
-  font-weight: $font-weight-700;
+  font-weight: $font-weight-700 !important;
   line-height: $lh-34;
   letter-spacing: $letter-spacing-md;
 }
 
 h5,
 .h5 {
-  font-weight: $font-weight-700;
+  font-weight: $font-weight-700 !important;
   line-height: $lh-26;
   letter-spacing: $letter-spacing-md !important;
 }
 
 h6,
 .h6 {
-  font-weight: $font-weight-400;
+  font-weight: $font-weight-400 !important;
   line-height: $lh-24;
   letter-spacing: $letter-spacing-sm;
 }
@@ -116,20 +119,18 @@ h6,
 
 .btn {
   font-size: $fs-15;
-  font-weight: $font-weight-700;
+  font-weight: $font-weight-700 !important;
   line-height: $lh-18;
   letter-spacing: $letter-spacing-md;
 }
 
 .subtitle-lg {
-  // font-size: $body-font-size;
   font-weight: $font-weight-700;
   line-height: $lh-12;
   letter-spacing: $letter-spacing-sm;
 }
 
 .subtitle-md {
-  // font-size: $body-font-size;
   font-weight: $font-weight-700;
   line-height: $lh-20;
   letter-spacing: $letter-spacing-sm;
@@ -150,55 +151,9 @@ h6,
 }
 
 .body-regular-font {
-  // font-size: $body-font-size;
   font-weight: $font-weight-400;
   line-height: $lh-20;
   letter-spacing: $letter-spacing-sm;
-}
-
-.bd-blue-100 {
-  color: $dark;
-  background-color: $blue-100;
-}
-
-.bd-blue-200 {
-  color: #000;
-  background-color: #9ec5fe;
-}
-
-.bd-blue-300 {
-  color: #000;
-  background-color: #6ea8fe;
-}
-
-.bd-blue-400 {
-  color: #000;
-  background-color: #3d8bfd;
-}
-
-.bd-blue-500 {
-  color: #fff;
-  background-color: #0d6efd;
-}
-
-.bd-blue-600 {
-  color: #fff;
-  background-color: #0a58ca;
-}
-
-.bd-blue-700 {
-  color: #fff;
-  background-color: #084298;
-}
-
-.bd-blue-800 {
-  color: #fff;
-  background-color: #052c65;
-}
-
-.bd-blue-900 {
-  color: #fff;
-  background-color: #031633;
 }
 
 // font size
