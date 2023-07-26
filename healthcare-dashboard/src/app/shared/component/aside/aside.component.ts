@@ -11,15 +11,18 @@ import { Router } from '@angular/router';
 export class AsideComponent {
   public adminDashboard: boolean = this.commonService.adminDashboard;
   public userDashboard: boolean = this.commonService.userDashboard;
-  isCollapsed: boolean = this.commonService.isCollapsed;
+  public isCollapsed: boolean = this.commonService.isCollapsed;
+  public activeRouter! : string;
   constructor(private commonService: CommonService, private router: Router) {}
   ngOnInit(): void {
     if (localStorage.getItem('isLogged') === 'admin@gmail.com') {
-      this.adminDashboard = this.commonService.adminDashboard = true;
-      this.userDashboard = this.commonService.userDashboard = false;
+      this.adminDashboard = this.commonService.adminDashboard;
+      this.userDashboard = this.commonService.userDashboard;
+      this.activeRouter = 'admin-dashboard';
     } else {
-      this.adminDashboard = this.commonService.adminDashboard = false;
-      this.userDashboard = this.commonService.userDashboard = true;
+      this.adminDashboard = this.commonService.adminDashboard;
+      this.userDashboard = this.commonService.userDashboard;
+      this.activeRouter = 'dashboard';
     }
   }
 
@@ -28,6 +31,7 @@ export class AsideComponent {
   }
   logout() {
     this.commonService.logout();
+    localStorage.setItem('isLoggedIn', "false");
     Swal.fire({
       title: 'Do you want to Logout?',
       icon: 'warning',

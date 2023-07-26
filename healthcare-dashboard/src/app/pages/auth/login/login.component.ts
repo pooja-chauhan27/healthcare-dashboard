@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { CommonService } from 'src/app/shared/services/common.service';
 import { Router } from '@angular/router';
@@ -10,8 +10,10 @@ import Swal from 'sweetalert2';
   styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent {
-  formObj: any;
+  public formObj: any;
   public show: boolean = false;
+  public adminEmail: string = 'admin@gmail.com';
+  public adminPassword: string = 'admin';
   loginFormGroup = new FormGroup({
     userEmail: new FormControl('', [Validators.required]),
     userPassword: new FormControl('', [Validators.required]),
@@ -34,11 +36,13 @@ export class LoginComponent {
         );
       });
       if (user) {
+        debugger;
         if (
-          user.userEmail === `admin@gmail.com` &&
-          user.userPassword === 'admin'
+          user.userEmail === this.adminEmail &&
+          user.userPassword === this.adminPassword
         ) {
           localStorage.setItem('isLogged', user.userEmail);
+          localStorage.setItem('isLoggedIn', 'true');
           this.commonService.adminDashboard = true;
           this.commonService.userDashboard = false;
           Swal.fire({
@@ -50,6 +54,7 @@ export class LoginComponent {
           this.router.navigate(['admin-dashboard']);
         } else {
           localStorage.setItem('isLogged', user.userEmail);
+          localStorage.setItem('isLoggedIn', 'true');
           this.commonService.adminDashboard = false;
           this.commonService.userDashboard = true;
           Swal.fire({
@@ -61,6 +66,7 @@ export class LoginComponent {
           this.router.navigate(['dashboard']);
         }
       } else {
+        localStorage.setItem('isLoggedIn', 'false');
         Swal.fire({
           icon: 'error',
           title: 'Login Failed!!',

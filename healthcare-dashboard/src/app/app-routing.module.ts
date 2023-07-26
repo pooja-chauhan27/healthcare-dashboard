@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DefaultLayoutComponent } from './shared/layout/default-layout/default-layout.component';
+import { authGuard } from './shared/auth-guard/auth.guard';
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
-  
+
   // {
   //   path: 'user',
   //   pathMatch: 'full',
@@ -22,6 +23,7 @@ const routes: Routes = [
   {
     path: '',
     component: DefaultLayoutComponent,
+    canActivate: [authGuard],
     children: [
       {
         path: '',
@@ -35,6 +37,7 @@ const routes: Routes = [
   {
     path: '',
     component: DefaultLayoutComponent,
+    canActivate: [authGuard],
     children: [
       {
         path: '',
