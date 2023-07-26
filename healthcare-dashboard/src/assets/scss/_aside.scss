@@ -9,17 +9,17 @@
       }
       svg {
         path {
-          fill: $primary-hover;
+          fill: $blue-300;
         }
       }
       a {
-        color: $primary-hover !important;
+        color: $blue-300 !important;
       }
     }
     a.active {
       svg {
         path {
-          fill: $primary-hover;
+          fill: $blue-300;
         }
       }
       color: $primary !important;

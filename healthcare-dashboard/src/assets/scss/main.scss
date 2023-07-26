@@ -16,47 +16,45 @@ $theme-color: (
   "light": $light,
 );
 
-// // font size
-$font-size-base: 0.875rem;
-$h1-font-size: 3.5rem;
-$h2-font-size: 2.5rem;
-$h3-font-size: 1.75rem;
-$h4-font-size: 1.625rem;
-$h5-font-size: 1.25rem;
-$h6-font-size: 1.125rem;
-
+// body styles
+$font-size-base: 0.875rem; //14px
+$body-font-size: 0.875rem; //14px
 $font-family-base: "Lato", sans-serif;
-$body-font-size: 0.875rem;
-$body-line-height: 1.25rem;
-$body-font-weight: $font-weight-400;
+$body-font-weight: 400;
 $body-color: $secondary;
 $body-bg: $light;
-$small-font-size: 0.813rem;
-$lead-font-size: 1rem;
+
+$h1-font-size: 3.5rem; //56px
+$h2-font-size: 2.5rem; //46px
+$h3-font-size: 1.75rem; //28px
+$h4-font-size: 1.625rem; //24px
+$h5-font-size: 1.25rem; //20px
+$h6-font-size: 1.125rem; //18px
+
+$small-font-size: 0.929rem; //13px
 
 // table style
-$table-cell-padding-y: 1.125rem !default;
-$table-cell-padding-x: 0.75rem !default;
-$table-cell-vertical-align: middle !default;
-$input-placeholder-color: $gray-900 !default;
-$input-border-color: $gray-900 !default;
+$table-cell-padding-y: 1.286rem; //18px
+$table-cell-padding-x: 0.857rem; //12px
+$table-cell-vertical-align: middle;
+
+//input style
+$input-placeholder-color: $gray-900;
+$input-border-color: $gray-900;
+$input-focus-border-color: $gray-400;
+$input-btn-padding-y : 0.75rem;
+$input-btn-padding-x : 0.75rem;
+
 //== button
 $btn-focus-box-shadow: none;
 $btn-active-box-shadow: none;
-$btn-focus-box-shadow: none;
 $navbar-toggler-focus-width: 0;
-$btn-focus-box-shadow: none;
+
+//box shadow-sm
 $box-shadow-sm: 4px 0px 16px 0px rgba(16, 30, 115, 0.08);
-$btn-padding-x: 0.75rem;
-$btn-padding-y: 0.75rem;
 
-$input-focus-border-color: $gray-300;
-
-$h5-font-weight: $font-weight-700;
-$h5-line-height: $lh-26;
 h1,
 .h1 {
-  font-size: $h1-font-size;
   font-weight: $font-weight-700;
   line-height: $lh-60;
   letter-spacing: $letter-spacing-lg;
@@ -64,7 +62,6 @@ h1,
 
 h2,
 .h2 {
-  font-size: $h2-font-size;
   font-weight: $font-weight-700;
   line-height: $lh-46;
   letter-spacing: $letter-spacing-md;
@@ -72,7 +69,6 @@ h2,
 
 h3,
 .h3 {
-  font-size: $h3-font-size;
   font-weight: $font-weight-400;
   line-height: $lh-34;
   letter-spacing: $letter-spacing-md;
@@ -80,7 +76,6 @@ h3,
 
 h4,
 .h4 {
-  font-size: $h4-font-size;
   font-weight: $font-weight-700;
   line-height: $lh-34;
   letter-spacing: $letter-spacing-md;
@@ -88,24 +83,22 @@ h4,
 
 h5,
 .h5 {
-  font-size: $h5-font-size;
-  font-weight: $h5-font-weight !important;
-  line-height: $h5-line-height !important;
+  font-weight: $font-weight-700;
+  line-height: $lh-26;
   letter-spacing: $letter-spacing-md !important;
 }
 
 h6,
 .h6 {
-  font-size: $h6-font-size;
   font-weight: $font-weight-400;
   line-height: $lh-24;
   letter-spacing: $letter-spacing-sm;
 }
 
 .small-regular-font {
-  font-size: $small-font-size !important;
-  font-weight: $font-weight-400 !important;
-  line-height: $lh-16 !important;
+  font-size: $small-font-size;
+  font-weight: $font-weight-400;
+  line-height: $lh-16;
 }
 
 .small-bold-font {
@@ -115,7 +108,7 @@ h6,
 }
 
 .small-bold-xs {
-  font-size: $extra-small;
+  font-size: $fs-xs;
   font-weight: $font-weight-700;
   line-height: $lh-12;
   letter-spacing: $letter-spacing-md;
@@ -129,14 +122,14 @@ h6,
 }
 
 .subtitle-lg {
-  font-size: $body-font-size;
+  // font-size: $body-font-size;
   font-weight: $font-weight-700;
   line-height: $lh-12;
   letter-spacing: $letter-spacing-sm;
 }
 
 .subtitle-md {
-  font-size: $body-font-size;
+  // font-size: $body-font-size;
   font-weight: $font-weight-700;
   line-height: $lh-20;
   letter-spacing: $letter-spacing-sm;
@@ -150,17 +143,62 @@ h6,
 }
 
 .body-bold-font {
-  font-size: $lead-font-size;
+  font-size: $fs-16;
   font-weight: $font-weight-700;
   line-height: $lh-24;
   letter-spacing: $letter-spacing-sm;
 }
 
 .body-regular-font {
-  font-size: $body-font-size;
+  // font-size: $body-font-size;
   font-weight: $font-weight-400;
   line-height: $lh-20;
   letter-spacing: $letter-spacing-sm;
+}
+
+.bd-blue-100 {
+  color: $dark;
+  background-color: $blue-100;
+}
+
+.bd-blue-200 {
+  color: #000;
+  background-color: #9ec5fe;
+}
+
+.bd-blue-300 {
+  color: #000;
+  background-color: #6ea8fe;
+}
+
+.bd-blue-400 {
+  color: #000;
+  background-color: #3d8bfd;
+}
+
+.bd-blue-500 {
+  color: #fff;
+  background-color: #0d6efd;
+}
+
+.bd-blue-600 {
+  color: #fff;
+  background-color: #0a58ca;
+}
+
+.bd-blue-700 {
+  color: #fff;
+  background-color: #084298;
+}
+
+.bd-blue-800 {
+  color: #fff;
+  background-color: #052c65;
+}
+
+.bd-blue-900 {
+  color: #fff;
+  background-color: #031633;
 }
 
 // font size

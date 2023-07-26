@@ -3,7 +3,6 @@
 //=================================================//
 
 .form-control:focus {
-  // border-color: $gray-300 !important;
   outline: 0;
   box-shadow: none !important;
 }
@@ -34,7 +33,7 @@
   top: 18px;
   &:hover {
     cursor: pointer;
-    color: $primary-hover;
+    color: $blue-300;
   }
 }
 .action-icon:hover {
@@ -43,7 +42,7 @@
   }
   svg {
     path {
-      fill: $primary-hover;
+      fill: $blue-300;
     }
   }
 }
